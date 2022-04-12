@@ -36,6 +36,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+| |  | |
 | ------------- | ------------- | ------------- |
 | Array - 2048  | Stack - Card Stack  | Queue - Music Queue |
 | String - Typing Game  | Linked List - Snake Game  | Bit Manipulation - Bit Calculator |
