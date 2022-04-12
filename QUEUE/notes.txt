@@ -1,0 +1,36 @@
+Mode 
+    - normal 
+        - normal queue fifo
+    -circular 
+        - circular queue
+    -priority
+        - priority queue
+
+Working 
+    - Fetch Data
+        - Fetch data from api 
+    - Add Data
+        - Then add some amount of data to display
+        - As well as in local storage
+            - Data
+                - id (num)
+                - name (str)
+                - artist name (str)
+                - priority (num)
+                - isplaying (boolean)
+                - image(artist)
+    - Collect Data
+        - Collect this data from localstorage 
+        - Show in playlist html file 
+    - Modify Data
+        - increase prio
+            - Get all data from localstorage
+            - change priority
+            - overwrite all data in localstorage
+        - add to list
+            - Get all data from localstorage
+            - Add item
+            - overwrite all data in localstorage
+    - Show Data
+        - Get all data from localstorage
+        - write the values saved in localstorage

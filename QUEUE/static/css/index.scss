@@ -1,0 +1,2364 @@
+*{
+    margin:0;
+    padding:0;
+    ::-webkit-scrollbar {
+        width: 10px;
+
+        }
+      
+      /* Track */
+    ::-webkit-scrollbar-track {
+        background: white; 
+        border-radius: 10px;
+        
+    }
+       
+      /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #B4A1FF; 
+        border-radius: 10px;
+    }
+      
+      /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+    body{
+        display:flex;
+        justify-content: center;
+        background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);   
+        font-size: 100%;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                
+            .nav{
+                position: relative;
+                font-family: "Aeonik";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 5em;
+                display: flex;
+                align-items: center;
+                text-align: center;
+    
+                color: #000000;
+    
+            }
+            .main_container{
+                
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                width:  80vw;
+                height: 75vh;
+                top: 5%;
+                background: rgba(255, 255, 255, 0.63);
+                box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+                border-radius: 69px;
+
+                .left_container{
+                    position: relative;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    width: 45%;
+                    top: 10%;
+                    .mode_list{
+                        position: relative;
+                        left: 20%;
+                        font-family: "Aeonik";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2.5em;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        color: #000000;
+                        ul{
+                            position: relative;
+
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            li{
+                                position: relative;
+                                font-family: "Aeonik";
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 0.8em;
+                                margin: 10px;
+                            
+                                /* identical to box height */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #000000;
+                                button{
+                                    border: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    // color: #000000;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                            li:hover{
+                                width: 100%;
+                                position: sticky;
+                                border: 3px solid #B4A1FF;
+                                background: #c4c4c4c0;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                    .personal_list{
+                        position: relative;
+                        left: 20%;
+                        font-family: "Aeonik";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2.5em;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        color: #000000;
+                        ul{
+                            position: relative;
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            li{
+                                position: relative;
+                                font-family: "Aeonik";
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 0.8em;
+                                margin: 10px;
+                                /* identical to box height */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #000000;
+                                button{
+                                    border: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    // color: #000000;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                            
+                            li:hover{
+                                width: 100%;
+                                position: sticky;
+                                border: 3px solid #B4A1FF;
+                                background: #c4c4c4c0;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+                        }                
+                    }
+                    .volume_list{
+                        position: relative;
+                        top: 10%;
+                        left: 12%;
+                        display: flex;
+                        justify-content: center;
+                        
+                        div{
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%, 50%);
+                            position: relative;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            flex-direction: row;
+                            width: 20vw;
+                            height: 5vh;
+                            background: #C4C4C4;
+                            box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+                            border-radius: 10px;
+
+                            img{
+                                width: 2vw;
+                            }
+                            
+                            .slider {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                
+                                -webkit-appearance: none;
+                                
+                                background: white;
+                                outline: none;
+                                width: 75%;
+                                height: 20px;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+                            }
+                            
+                            .slider:hover {
+                                opacity: 1;
+                              }
+                              
+                              .slider::-webkit-slider-thumb {
+                                    position: relative;
+                                    left: 0%;
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    width: 10%;
+                                    height: 20px;
+                                    background: #B4A1FF;
+                                    cursor: pointer;
+                              }
+                              
+                              .slider::-moz-range-thumb {
+                                position: relative;
+                                left: 0;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                
+                                
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 80%;
+                                height: 20px;
+                                background: white;
+                                cursor: pointer;
+                              }
+                        }
+                    }
+
+                }
+                .middle_line{
+                    position: relative;
+                    width: 0.4%;
+                    height: 100%;
+                    background: #A49D9D;
+                    border-left: 5px solid #A49D9D;
+
+                }
+                .right_container{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .music_player{
+                        position: relative;
+                        width: 100%;
+                        height: 35%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: row;
+                        // border:1px solid red;   
+                        .description{
+                            position: relative;
+                            display: flex;
+                            flex-direction: row;
+                            // border:1px solid blue;   
+
+                            .hero_img{
+                                position: relative;
+                                width: 200px;
+                                margin: 7%;     
+                                display: flex;
+                                border-radius: 13%;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 24px;
+
+                            }
+                            .others{
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                margin-top: 7%;
+                                .song_name{
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 2em;
+                                    
+                                    color: blueviolet;
+                                }
+                                .artist_name{
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1em;
+                                    
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    color: #BAAEAE;
+                                    
+                                }
+                                .buttons{
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    .add_button ,.prio_button{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        padding: 2%;
+                                        width: 100px;
+                                        font-size: 1em;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        
+                                        
+                                        color: #483131;                                        
+                                        background: #C4C4C4;
+                                        border-radius: 7px;
+                                        border: none;
+                                        cursor:pointer;
+                                    }
+                                    .add_button:hover, .prio_button:hover{
+                                        background: lightgreen;
+                                        color:black;
+                                        font-weight:bold;
+                                    }
+                                    .prio_button{
+                                        margin-left: 10%;
+                                    }
+                                            
+
+                                
+                                }
+                                
+                            }
+                        }
+                        .button_list{
+                            // border:1px solid green;
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            width: 40%;
+                            .action_button{
+                                position: relative;
+                                list-style-type:none;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                width: 60%;
+                                li{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-content: center;
+                                    .prev,.next{
+                                        width: 2vw;
+                                    }
+                                    .play{
+                                        width: 3vw;
+                                    }
+                                    position: relative;
+                                    color: #C4C4C4;
+                                    cursor: pointer;  
+                                    margin-top: 30%; 
+                                }
+
+                            }
+                            .song_slider {
+                                margin-top: 13%;
+                                -webkit-appearance: none;
+                                
+                                background: white;
+                                outline: none;
+                                width: 75%;
+                                height: 20px;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+
+                                display:flex;
+                                justify-content:flex-start;
+                                .inner_slider{
+                                    position:relative;
+                                    width:10%;
+                                    background: #B4A1FF;
+                                }
+                            }
+                            
+                            // .song_slider:hover {
+                            //     opacity: 1;
+                            //   }
+                              
+                            //   .song_slider::-webkit-slider-thumb {
+                            //         position: relative;
+                            //         left:0;
+                                    
+                                    
+                            //         -webkit-appearance: none;
+                            //         appearance: none;
+                            //         width: 0%;
+                            //         height: 20px;
+                            //         background: #B4A1FF;
+                            //         cursor: pointer;
+                            //   }
+                              
+                            //   .song_slider::-moz-range-thumb {
+                            //     position: relative;
+                            //     left: 0;
+                                
+                                
+                            //     -webkit-appearance: none;
+                            //     appearance: none;
+                            //     width: 80%;
+                            //     height: 20px;
+                            //     background: white;
+                            //     cursor: pointer;
+                            //   }
+                            
+                        }
+
+                    }
+                    .option_list{
+                        position: relative;
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-top: 10px;
+                        width: 50%;
+                        .album{
+                            font-family: "Aeonik";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 1.5em;
+                            /* identical to box height */
+        
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+        
+                            color: black;
+                            cursor: pointer;
+                        }
+                        .priority , .fav{
+                            position: relative;
+                            font-family: "Aeonik";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 1.5em;
+                            /* identical to box height */
+        
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+        
+                            color: #CAC8C8;
+                            cursor: pointer;
+                        }
+        
+                    }
+                    .album_list{
+                        position: relative;
+                        width: 90%;
+                        height: 60%;
+                        overflow-y: scroll;
+                        margin-top: 10px;
+                        box-sizing: border-box;
+                        
+                        ul{
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 100%;
+                            li{
+                                margin: 2%;
+                                position: relative;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                flex-direction: row;
+                                background: #C4C4C4;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 21px;
+                                width: 80%;
+
+                                .song_info{
+                                    position: relative;
+                                    display:flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    width: 50%;
+                                    .image_song{
+
+                                        position: relative;                                        
+                                        size: cover;
+                                        width:  100px;
+                                        height: 60px;
+                                        border-radius: 10px;                                        
+                                        margin:1%;
+                                        background-size: contain;
+                                        overflow: hidden;
+                                    }
+                                    .number{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 2em;
+                                        /* identical to box height */
+                                        
+                                        margin:2%;
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #000000;
+                                        
+                                    }
+                                    .song_name_info{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 1.5em;
+                                        margin:3%;
+
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #1D1919;                                        
+                                    }
+                                }
+                                .artist_info{
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1em;
+                                    /* identical to box height */
+                                    
+                                    color: #505050;                                    
+                                }
+                                .song_time{
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1.8em;
+                                    line-height: 52px;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    color: #000000;                                    
+                                }
+                                .dropdown {
+                                    float: left;
+                                    overflow: hidden;
+                                  }
+                                  
+                                  /* Style the dropdown button to fit inside the topnav */
+                                  .dropdown .dropbtn {
+                                    font-size: 3em;
+                                    border: none;
+                                    outline: none;
+                                    color: black;
+                                    padding: 14px 16px;
+                                    background-color: inherit;
+                                    font-family: inherit;
+                                    margin: 0;
+                                  }
+                                  
+                                  /* Style the dropdown content (hidden by default) */
+                                  .dropdown-content {
+                                    display: none;
+                                    position: absolute;
+                                    background-color: #f9f9f9;
+                                    min-width: 16%;
+                                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                    z-index: 1;
+                                  }
+                                  
+                                  /* Style the links inside the dropdown */
+                                  .dropdown-content a {
+                                    font-family: "Aeonik";
+                                    font-weight: bold;
+                                    float: none;
+                                    color: #B4A1FF;
+                                    padding: 0.5vw 0.5vh;
+                                    text-decoration: none;
+                                    display: block;
+                                    text-align: left;
+                                  }
+                                  
+                                  /* Add a dark background on topnav links and the dropdown button on hover */
+                                .dropdown:hover .dropbtn {
+                                    color: #B4A1FF;
+                                  }
+                                  
+                                  /* Add a grey background to dropdown links on hover */
+                                  .dropdown-content a:hover {
+                                    background-color: grey;
+                                  }
+                                  
+                                  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+                                  .dropdown:hover .dropdown-content {
+                                    display: block;
+                                  }
+                                  
+                            }
+                        }
+                    }
+
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    body{
+        display:flex;
+        justify-content: center;
+        background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);   
+        font-size: 55%;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                
+            .nav{
+                position: relative;
+                font-family: "Aeonik";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 5em;
+                display: flex;
+                align-items: center;
+                text-align: center;
+    
+                color: #000000;
+    
+            }
+            .main_container{
+                
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                width:  90vw;
+                height: 75vh;
+                top: 5%;
+                background: rgba(255, 255, 255, 0.63);
+                box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+                border-radius: 69px;
+
+                .left_container{
+                    position: relative;
+                    display: flex;
+                    // align-items: center;
+                    width:40%;
+                    height:100%;
+                    left: 0%;
+                    flex-direction: column;
+                    // top: 10%;
+                    .mode_list{
+                        position: relative;
+                        left: 20%;
+                        font-family: "Aeonik";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3.5em;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        color: #000000;
+                        ul{
+                            position: relative;
+
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            li{
+                                position: relative;
+                                font-family: "Aeonik";
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 0.8em;
+                                margin: 10px;
+                            
+                                /* identical to box height */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #000000;
+                                button{
+                                    border: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    // color: #000000;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                            li:hover{
+                                width: 100%;
+                                position: sticky;
+                                border: 3px solid #B4A1FF;
+                                background: #c4c4c4c0;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                    .personal_list{
+                        position: relative;
+                        left: 20%;
+                        font-family: "Aeonik";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3.5em;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        color: #000000;
+                        ul{
+                            position: relative;
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            li{
+                                position: relative;
+                                font-family: "Aeonik";
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 0.8em;
+                                margin: 10px;
+                                /* identical to box height */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #000000;
+                                button{
+                                    border: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    // color: #000000;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                            
+                            li:hover{
+                                width: 100%;
+                                position: sticky;
+                                border: 3px solid #B4A1FF;
+                                background: #c4c4c4c0;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+                        }                
+                    }
+                    .volume_list{
+                        position: relative;
+                        top: 10%;
+                        left: 12%;
+                        display: flex;
+                        justify-content: center;
+                        div{
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%, 50%);
+                            position: relative;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            flex-direction: row;
+                            width: 20vw;
+                            height: 5vh;
+                            background: #C4C4C4;
+                            box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+                            border-radius: 10px;
+
+                            img{
+                                width: 2vw;
+                            }
+                            
+                            .slider{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                -webkit-appearance: none;
+                                
+                                background: white;
+                                outline: none;
+                                width: 75%;
+                                height: 20px;
+                                // width: 20px;
+                                // height: 75%;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+                            }
+                            
+                            .slider:hover {
+                                opacity: 1;
+                              }
+                              
+                              .slider::-webkit-slider-thumb {
+                                    position: relative;
+                                    left: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    
+                                    
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    width: 10%;
+                                    height: 20px;
+
+                                    // width: 20px;
+                                    // height: 80%;
+                                    background: #B4A1FF;
+                                    cursor: pointer;
+                              }
+                              
+                              .slider::-moz-range-thumb {
+                                position: relative;
+                                left: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 20px;
+                                height: 80%;
+                                background: white;
+                                cursor: pointer;
+                              }
+                        }
+                    }
+
+                }
+                .middle_line{
+                    position: relative;
+                    width: 0.4%;
+                    height: 100%;
+                    background: #A49D9D;
+                    border-left: 5px solid #A49D9D;
+
+                }
+                .right_container{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .music_player{
+                        position: relative;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: row;
+                        // border:1px solid black;
+                        box-sizing: border-box;
+                        .description{
+                            position: relative;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            flex-direction: row;
+                            // border:2px solid red;
+                            width:100%;
+                            height:100%;
+                            margin-left: 60px;
+                            .hero_img{
+                                position: relative;
+                                width: 60%; 
+                                display: flex;
+                                border-radius: 13%;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 12px;
+
+                            }
+                            .others{
+                                position: relative;
+                                display: flex;
+                                width: 50%;
+                                height:50%;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                // align-items: center;
+                                // border:2px solid blue;
+                                .song_artist_info{
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    top:0;
+                                    .song_name{
+                                        position: relative;                                    
+                                        
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 2.5em;
+                                        
+                                        color: blueviolet;
+                                    }
+                                    .artist_name{
+                                        position: relative;
+                                        
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 2em;
+                                        
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #BAAEAE;
+                                        
+                                    }
+                                }
+                                .buttons{
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-evenly;
+                                    width: 70%;
+                                    // border:2px solid yellowgreen;
+                                    .add_button ,.prio_button{
+                                        position: relative;
+                                        width: 15vw;
+                                        height:4vh;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 1.7em;
+                                        padding:2%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        
+                                        color: #483131;                                        
+                                        background: #C4C4C4;
+                                        border-radius: 6px;
+                                        border: none;
+                                    }
+
+                                }
+                                
+                            }
+                        }
+                        .button_list{
+
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            width: 100%;
+                            // margin: 5%;
+                            // border:2px solid green;
+                            .action_button{
+                                position: relative;
+                                list-style-type:none;
+                                display: flex;
+                                flex-direction: row;
+                                li{
+                                    margin-top: 3%;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    align-content: center;
+                                    .prev,.next{
+                                        width: 3vw;
+                                    }
+                                    .play{
+                                        width: 4vw;
+                                    }
+                                    position: relative;
+                                    color: #C4C4C4;
+                                    cursor: pointer; 
+                                }
+
+                            }
+
+                            .song_slider {
+                                position:relative;
+                                margin:2px;
+                                -webkit-appearance: none;
+                                
+                                background: white;
+                                outline: none;
+                                width: 75%;
+                                height: 10px;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+
+                                display:flex;
+                                justify-content:flex-start;
+                                .inner_slider{
+                                    position:relative;
+                                    width:15px;
+                                    background: #B4A1FF;
+                                }
+                            }
+                              
+                            
+                        }
+
+                    }
+                    .option_list{
+                        
+                        position: relative;
+                        display: flex;
+                        justify-content: space-evenly;
+                        top: 25px;
+                        width: 50%;
+                        .album{
+                            font-family: "Aeonik";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2em;
+                            /* identical to box height */
+        
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+        
+                            color: black;
+                            cursor: pointer;
+                        }
+                        .priority , .fav{
+                            font-family: "Aeonik";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2em;
+                            /* identical to box height */
+        
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+        
+                            color: #CAC8C8;
+                            cursor: pointer;
+                        }
+        
+                    }
+                    .album_list{
+
+                        position: relative;
+                        width: 90%;
+                        height: 60%;
+                        overflow-y: scroll;
+                        box-sizing: border-box;
+                        margin-top: 40px;
+                        ul{
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            width: 100%;
+                            
+                            li{
+                                margin: 2%;
+                                position: relative;
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                flex-direction: row;
+                                background: #C4C4C4;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 21px;
+                                width: 80%;
+
+                                .song_info{
+                                    position: relative;
+                                    display:flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    width: 50%;
+                                    .image_song{
+                                        position: relative;                                        
+                                        size: cover;
+                                        width:  27%;
+                                        border-radius: 15px;                                        
+                                    }
+                                    .number{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 2em;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #000000;
+                                        
+                                    }
+                                    .song_name_info{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 1.5em;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #1D1919;                                        
+                                    }
+                                }
+                                .artist_info{
+                                    display: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1em;
+                                    /* identical to box height */
+                                    
+                                    color: #505050;                                    
+                                }
+                                .song_time{
+                                    display: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    color: #000000;                                    
+                                }
+                                .other_dot{
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 3em;
+                                    
+                                    color: #000000;       
+                                    cursor: pointer;                             
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: 1000px){
+    /*Tablets [601px -> 1200px]*/
+    body{
+        display:flex;
+        justify-content: center;
+        background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);   
+        font-size: 55%;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                
+            .nav{
+                position: relative;
+                font-family: "Aeonik";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 5em;
+                display: flex;
+                align-items: center;
+                text-align: center;
+    
+                color: #000000;
+    
+            }
+            .main_container{
+                
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                width:  90vw;
+                height: 75vh;
+                top: 5%;
+                background: rgba(255, 255, 255, 0.63);
+                box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+                border-radius: 69px;
+
+                .left_container{
+                    position: relative;
+                    display: flex;
+                    // align-items: center;
+                    width:40%;
+                    height:100%;
+                    left: 0%;
+                    flex-direction: column;
+                    // top: 10%;
+                    .mode_list{
+                        position: relative;
+                        left: 20%;
+                        font-family: "Aeonik";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3.5em;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        color: #000000;
+                        ul{
+                            position: relative;
+
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            li{
+                                position: relative;
+                                font-family: "Aeonik";
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 0.8em;
+                                margin: 10px;
+                            
+                                /* identical to box height */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #000000;
+                                button{
+                                    border: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    // color: #000000;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                            li:hover{
+                                width: 100%;
+                                position: sticky;
+                                border: 3px solid #B4A1FF;
+                                background: #c4c4c4c0;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                    .personal_list{
+                        position: relative;
+                        left: 20%;
+                        font-family: "Aeonik";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3.5em;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        color: #000000;
+                        ul{
+                            position: relative;
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            li{
+                                position: relative;
+                                font-family: "Aeonik";
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 0.8em;
+                                margin: 10px;
+                                /* identical to box height */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #000000;
+                                button{
+                                    border: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    // color: #000000;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                            
+                            li:hover{
+                                width: 100%;
+                                position: sticky;
+                                border: 3px solid #B4A1FF;
+                                background: #c4c4c4c0;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+                        }                
+                    }
+                    .volume_list{
+                        position: relative;
+                        top: 10%;
+                        left: 12%;
+                        display: flex;
+                        justify-content: center;
+                        div{
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%, 50%);
+                            position: relative;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            flex-direction: row;
+                            width: 20vw;
+                            height: 5vh;
+                            background: #C4C4C4;
+                            box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+                            border-radius: 10px;
+
+                            img{
+                                width: 2vw;
+                            }
+                            
+                            .slider{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                -webkit-appearance: none;
+                                
+                                background: white;
+                                outline: none;
+                                width: 75%;
+                                height: 20px;
+                                // width: 20px;
+                                // height: 75%;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+                            }
+                            
+                            .slider:hover {
+                                opacity: 1;
+                              }
+                              
+                              .slider::-webkit-slider-thumb {
+                                    position: relative;
+                                    left: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    
+                                    
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    width: 10%;
+                                    height: 20px;
+
+                                    // width: 20px;
+                                    // height: 80%;
+                                    background: #B4A1FF;
+                                    cursor: pointer;
+                              }
+                              
+                              .slider::-moz-range-thumb {
+                                position: relative;
+                                left: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 20px;
+                                height: 80%;
+                                background: white;
+                                cursor: pointer;
+                              }
+                        }
+                    }
+
+                }
+                .middle_line{
+                    position: relative;
+                    width: 0.4%;
+                    height: 100%;
+                    background: #A49D9D;
+                    border-left: 5px solid #A49D9D;
+
+                }
+                .right_container{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .music_player{
+                        position: relative;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        // border:1px solid black;
+                        box-sizing: border-box;
+                        .description{
+                            position: relative;
+                            // display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            flex-direction: row;
+                            width:100%;
+                            height:100%;
+                            margin-left: 0px;
+                            .hero_img{
+                                position: relative;
+                                width: 40%; 
+                                display: flex;
+                                border-radius: 13%;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 12px;
+
+                            }
+                            .others{
+                                position: relative;
+                                display: flex;
+                                width: 50%;
+                                height:50%;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                // align-items: center;
+                                // border:2px solid blue;
+                                .song_artist_info{
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    top:0;
+                                    .song_name{
+                                        position: relative;                                    
+                                        
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 2.5em;
+                                        
+                                        color: blueviolet;
+                                    }
+                                    .artist_name{
+                                        position: relative;
+                                        
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 2em;
+                                        
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #BAAEAE;
+                                        
+                                    }
+                                }
+                                .buttons{
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-evenly;
+                                    width: 70%;
+                                    // border:2px solid yellowgreen;
+                                    .add_button ,.prio_button{
+                                        position: relative;
+                                        width: 15vw;
+                                        height:4vh;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 1.7em;
+                                        padding:2%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        
+                                        color: #483131;                                        
+                                        background: #C4C4C4;
+                                        border-radius: 6px;
+                                        border: none;
+                                    }
+
+                                }
+                                
+                            }
+                        }
+                        .button_list{
+
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            width: 100%;
+                            .action_button{
+                                margin: 0%;
+                                top: -10px;
+                                // border:2px solid green;
+                                position: relative;
+                                list-style-type:none;
+                                display: flex;
+                                flex-direction: row;
+                                width: 40%;
+                                li{
+                                    // margin-top: 3%;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    align-content: center;
+                                    .prev,.next{
+                                        width: 3vw;
+                                    }
+                                    .play{
+                                        width: 4vw;
+                                    }
+                                    position: relative;
+                                    color: #C4C4C4;
+                                    cursor: pointer; 
+                                }
+
+                            }
+
+                            .song_slider {
+                                position:relative;
+                                margin:2px;
+                                -webkit-appearance: none;
+                                
+                                background: white;
+                                outline: none;
+                                width: 75%;
+                                height: 10px;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+
+                                display:flex;
+                                justify-content:flex-start;
+                                .inner_slider{
+                                    position:relative;
+                                    width:15px;
+                                    background: #B4A1FF;
+                                }
+                            }
+                              
+                            
+                        }
+
+                    }
+                    .option_list{
+                        
+                        position: relative;
+                        display: flex;
+                        justify-content: space-evenly;
+                        top: 25px;
+                        width: 50%;
+                        .album{
+                            font-family: "Aeonik";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2em;
+                            /* identical to box height */
+        
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+        
+                            color: black;
+                            cursor: pointer;
+                        }
+                        .priority , .fav{
+                            font-family: "Aeonik";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2em;
+                            /* identical to box height */
+        
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+        
+                            color: #CAC8C8;
+                            cursor: pointer;
+                        }
+        
+                    }
+                    .album_list{
+
+                        position: relative;
+                        width: 90%;
+                        height: 50%;
+                        overflow-y: scroll;
+                        box-sizing: border-box;
+                        margin-top: 40px;
+                        ul{
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            width: 100%;
+                            
+                            li{
+                                margin: 2%;
+                                position: relative;
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                flex-direction: row;
+                                background: #C4C4C4;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 21px;
+                                width: 80%;
+
+                                .song_info{
+                                    position: relative;
+                                    display:flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    width: 50%;
+                                    .image_song{
+                                        position: relative;                                        
+                                        background-size: cover;
+                                        width:  50px;
+                                        height: 40px;
+                                        border-radius: 10px;                                        
+                                    }
+                                    .number{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 2em;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #000000;
+                                        
+                                    }
+                                    .song_name_info{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 1.5em;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #1D1919;                                        
+                                    }
+                                }
+                                .artist_info{
+                                    display: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1em;
+                                    /* identical to box height */
+                                    
+                                    color: #505050;                                    
+                                }
+                                .song_time{
+                                    display: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    color: #000000;                                    
+                                }
+                                .other_dot{
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 3em;
+                                    
+                                    color: #000000;       
+                                    cursor: pointer;                             
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    body{
+        display:flex;
+        justify-content: center;
+        background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);   
+        font-size: 55%;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                
+            .nav{
+                position: relative;
+                font-family: "Aeonik";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 5em;
+                display: flex;
+                align-items: center;
+                text-align: center;
+    
+                color: #000000;
+    
+            }
+            .main_container{
+                
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                width:  90vw;
+                height: 80vh;
+                top: 5%;
+                background: rgba(255, 255, 255, 0.63);
+                box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+                border-radius: 29px;
+
+                .left_container{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    left: -10%;
+                    flex-direction: column;
+                    top: 10%;
+                    
+                    .mode_list{
+                        position: relative;
+                        left: 20%;
+                        font-family: "Aeonik";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2.5em;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        color: #000000;
+                        ul{
+                            position: relative;
+
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            li{
+                                position: relative;
+                                font-family: "Aeonik";
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 0.8em;
+                                margin: 10px;
+                            
+                                /* identical to box height */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #000000;
+                                button{
+                                    border: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    // color: #000000;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                            li:hover{
+                                width: 100%;
+                                position: sticky;
+                                border: 3px solid #B4A1FF;
+                                background: #c4c4c4c0;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                    .personal_list{
+                        position: relative;
+                        left: 20%;
+                        font-family: "Aeonik";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2.5em;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        color: #000000;
+                        ul{
+                            position: relative;
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            li{
+                                position: relative;
+                                font-family: "Aeonik";
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 0.8em;
+                                margin: 10px;
+                                /* identical to box height */
+                                
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                
+                                color: #000000;
+                                button{
+                                    border: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                    /* identical to box height */
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    // color: #000000;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                            
+                            li:hover{
+                                width: 100%;
+                                position: sticky;
+                                border: 3px solid #B4A1FF;
+                                background: #c4c4c4c0;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+                        }                
+                    }
+                    .volume_list{
+                        position: relative;
+                        top: -10%;
+                        left: 12%;
+                        display: flex;
+                        justify-content: center;
+                        div{
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%, 50%);
+                            position: relative;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            flex-direction: column;
+                            width: 5vw;
+                            height: 20vh;
+                            background: #C4C4C4;
+                            box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+                            border-radius: 10px;
+
+                            img{
+                                width: 2vw;
+                            }
+                            
+                            .slider{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                -webkit-appearance: slider-vertical;
+                                
+                                background: #B4A1FF;
+                                outline: none;
+                                // width: 75%;
+                                // height: 20px;
+                                width: 20px;
+                                height: 75%;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+                            }
+                            
+                            .slider:hover {
+                                opacity: 1;
+                              }
+                              
+                              .slider::-webkit-slider-thumb {
+                                    position: relative;
+                                    left: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    
+                                    
+                                    -webkit-appearance: slider-vertical ;
+                                    appearance: none;
+                                    // width: 80%;
+                                    // height: 20px;
+
+                                    width: 20px;
+                                    height: 80%;
+                                    background: white;
+                                    cursor: pointer;
+                              }
+                              
+                              .slider::-moz-range-thumb {
+                                position: relative;
+                                left: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 20px;
+                                height: 80%;
+                                background: white;
+                                cursor: pointer;
+                              }
+                        }
+                    }
+
+                }
+                .middle_line{
+                    position: relative;
+                    width: 0.4%;
+                    height: 100%;
+                    background: #A49D9D;
+                    border-left: 5px solid #A49D9D;
+
+                }
+                .right_container{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    .music_player{
+                        position: relative;
+                        height: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        .description{
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            // border:1px solid  black;
+                            margin-top:100px;
+                            .hero_img{  
+                                position: relative;
+
+                                width: 70%;  
+                                display: flex;
+                                border-radius: 13%;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+
+                            }
+                            .others{
+                                position: relative;
+                                display: flex;
+                                width: 95%;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                .song_artist_info{
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 80%;
+                                    .song_name{
+                                        position: relative;                                    
+                                        
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 2em;
+                                        
+                                        color: blueviolet;
+                                    }
+                                    .artist_name{
+                                        position: relative;
+                                        
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 1.5em;
+                                        
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #BAAEAE;
+                                        
+                                    }
+                                }
+                                .buttons{
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    width: 100%;
+                                    
+
+                                }
+                                
+                            }
+                        }
+                        .button_list{
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            width: 100%;
+                            top: 50px;
+                            .action_button{
+                                position: relative;
+                                list-style-type:none;
+                                display: flex;
+                                flex-direction: row;
+                                height: auto;
+                                li{
+                                    margin-top: 3%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-content: center;
+                                    .prev,.next{
+                                        width: 4vw;
+                                    }
+                                    .play{
+                                        width: 5vw;
+                                    }
+                                    position: relative;
+                                    color: #C4C4C4;
+                                    cursor: pointer; 
+                                }
+
+                            }
+                            .song_slider {
+                                -webkit-appearance: none;
+                                
+                                background: white;
+                                outline: none;
+                                width: 75%;
+                                height: 20px;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+
+                                display:flex;
+                                justify-content:flex-start;
+                                .inner_slider{
+                                    position:relative;
+                                    width:10%;
+                                    background: #B4A1FF;
+                                }
+                            }
+                        }
+
+                    }
+                    .option_list{
+                        
+                        position: relative;
+                        display: flex;
+                        justify-content: space-evenly;
+                        top: 25%;
+                        width: 100%;
+                        .album{
+                            font-family: "Aeonik";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2em;
+                            /* identical to box height */
+        
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+        
+                            color: black;
+                            cursor: pointer;
+                        }
+                        .priority , .fav{
+                            font-family: "Aeonik";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2em;
+                            /* identical to box height */
+        
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+        
+                            color: #CAC8C8;
+                            cursor: pointer;
+                        }
+        
+                    }
+                    .album_list{
+
+                        position: relative;
+                        // display: flex;
+                        width: 90%;
+                        height: 35%;
+                        overflow-y: scroll;
+                        // scroll-snap-stop: normal;
+                        top: 20%;
+                        
+                        ul{
+                            
+                            // height: 50vh;
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            width: 100%;
+                            
+                            li{
+                                margin: 2%;
+                                position: relative;
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                flex-direction: row;
+                                background: #C4C4C4;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 21px;
+                                width: 80%;
+
+                                .song_info{
+                                    position: relative;
+                                    display:flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    width: 50%;
+                                    .image_song{
+                                        position: relative;                                        
+                                        size: cover;
+                                        width:  27%;
+                                        border-radius: 15px;                                        
+                                    }
+                                    .number{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 2em;
+                                        /* identical to box height */
+                                        
+                                        display: none;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #000000;
+                                        
+                                    }
+                                    .song_name_info{
+                                        position: relative;
+                                        font-family: "Aeonik";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 1em;
+                                        /* identical to box height */
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        
+                                        color: #1D1919;                                        
+                                    }
+                                }
+                                .artist_info{
+                                    display: none;
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1em;
+                                    /* identical to box height */
+                                    
+                                    color: #505050;                                    
+                                }
+                                .song_time{
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1.8em;
+                                    /* identical to box height */
+                                    
+                                    display: none;
+                                    align-items: center;
+                                    text-align: center;
+                                    
+                                    color: #000000;                                    
+                                }
+                                .other_dot{
+                                    position: relative;
+                                    font-family: "Aeonik";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 3em;
+                                    
+                                    color: #000000;       
+                                    cursor: pointer;                             
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            
+        }
+    }
+}

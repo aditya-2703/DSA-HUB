@@ -1,0 +1,2978 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+* ::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background: #B4A1FF;
+  border-radius: 10px;
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#E6E9F0), to(#EEF1F5));
+  background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+  font-size: 100%;
+}
+
+* body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .container .nav {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+* body .container .main_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vw;
+  height: 75vh;
+  top: 5%;
+  background: rgba(255, 255, 255, 0.63);
+  -webkit-box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 69px;
+}
+
+* body .container .main_container .left_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  top: 10%;
+}
+
+* body .container .main_container .left_container .mode_list {
+  position: relative;
+  left: 20%;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000000;
+}
+
+* body .container .main_container .left_container .mode_list ul {
+  position: relative;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* body .container .main_container .left_container .mode_list ul li {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  margin: 10px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+* body .container .main_container .left_container .mode_list ul li button {
+  border: none;
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+}
+
+* body .container .main_container .left_container .mode_list ul li:hover {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  border: 3px solid #B4A1FF;
+  background: #c4c4c4c0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+* body .container .main_container .left_container .personal_list {
+  position: relative;
+  left: 20%;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000000;
+}
+
+* body .container .main_container .left_container .personal_list ul {
+  position: relative;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* body .container .main_container .left_container .personal_list ul li {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  margin: 10px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+* body .container .main_container .left_container .personal_list ul li button {
+  border: none;
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+}
+
+* body .container .main_container .left_container .personal_list ul li:hover {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  border: 3px solid #B4A1FF;
+  background: #c4c4c4c0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+* body .container .main_container .left_container .volume_list {
+  position: relative;
+  top: 10%;
+  left: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .container .main_container .left_container .volume_list div {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20vw;
+  height: 5vh;
+  background: #C4C4C4;
+  -webkit-box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+          box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+  border-radius: 10px;
+}
+
+* body .container .main_container .left_container .volume_list div img {
+  width: 2vw;
+}
+
+* body .container .main_container .left_container .volume_list div .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-appearance: none;
+  background: white;
+  outline: none;
+  width: 75%;
+  height: 20px;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+* body .container .main_container .left_container .volume_list div .slider:hover {
+  opacity: 1;
+}
+
+* body .container .main_container .left_container .volume_list div .slider::-webkit-slider-thumb {
+  position: relative;
+  left: 0%;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10%;
+  height: 20px;
+  background: #B4A1FF;
+  cursor: pointer;
+}
+
+* body .container .main_container .left_container .volume_list div .slider::-moz-range-thumb {
+  position: relative;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 80%;
+  height: 20px;
+  background: white;
+  cursor: pointer;
+}
+
+* body .container .main_container .middle_line {
+  position: relative;
+  width: 0.4%;
+  height: 100%;
+  background: #A49D9D;
+  border-left: 5px solid #A49D9D;
+}
+
+* body .container .main_container .right_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+* body .container .main_container .right_container .music_player {
+  position: relative;
+  width: 100%;
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+* body .container .main_container .right_container .music_player .description {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+* body .container .main_container .right_container .music_player .description .hero_img {
+  position: relative;
+  width: 200px;
+  margin: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 13%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+* body .container .main_container .right_container .music_player .description .others {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 7%;
+}
+
+* body .container .main_container .right_container .music_player .description .others .song_name {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  color: blueviolet;
+}
+
+* body .container .main_container .right_container .music_player .description .others .artist_name {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #BAAEAE;
+}
+
+* body .container .main_container .right_container .music_player .description .others .buttons {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container .main_container .right_container .music_player .description .others .buttons .add_button, * body .container .main_container .right_container .music_player .description .others .buttons .prio_button {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: bold;
+  padding: 2%;
+  width: 100px;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #483131;
+  background: #C4C4C4;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+* body .container .main_container .right_container .music_player .description .others .buttons .add_button:hover, * body .container .main_container .right_container .music_player .description .others .buttons .prio_button:hover {
+  background: lightgreen;
+  color: black;
+  font-weight: bold;
+}
+
+* body .container .main_container .right_container .music_player .description .others .buttons .prio_button {
+  margin-left: 10%;
+}
+
+* body .container .main_container .right_container .music_player .button_list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+* body .container .main_container .right_container .music_player .button_list .action_button {
+  position: relative;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+}
+
+* body .container .main_container .right_container .music_player .button_list .action_button li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+  color: #C4C4C4;
+  cursor: pointer;
+  margin-top: 30%;
+}
+
+* body .container .main_container .right_container .music_player .button_list .action_button li .prev, * body .container .main_container .right_container .music_player .button_list .action_button li .next {
+  width: 2vw;
+}
+
+* body .container .main_container .right_container .music_player .button_list .action_button li .play {
+  width: 3vw;
+}
+
+* body .container .main_container .right_container .music_player .button_list .song_slider {
+  margin-top: 13%;
+  -webkit-appearance: none;
+  background: white;
+  outline: none;
+  width: 75%;
+  height: 20px;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+* body .container .main_container .right_container .music_player .button_list .song_slider .inner_slider {
+  position: relative;
+  width: 10%;
+  background: #B4A1FF;
+}
+
+* body .container .main_container .right_container .option_list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10px;
+  width: 50%;
+}
+
+* body .container .main_container .right_container .option_list .album {
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+* body .container .main_container .right_container .option_list .priority, * body .container .main_container .right_container .option_list .fav {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #CAC8C8;
+  cursor: pointer;
+}
+
+* body .container .main_container .right_container .album_list {
+  position: relative;
+  width: 90%;
+  height: 60%;
+  overflow-y: scroll;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body .container .main_container .right_container .album_list ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+* body .container .main_container .right_container .album_list ul li {
+  margin: 2%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #C4C4C4;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  width: 80%;
+  /* Style the dropdown button to fit inside the topnav */
+  /* Style the dropdown content (hidden by default) */
+  /* Style the links inside the dropdown */
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  /* Add a grey background to dropdown links on hover */
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+}
+
+* body .container .main_container .right_container .album_list ul li .song_info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+}
+
+* body .container .main_container .right_container .album_list ul li .song_info .image_song {
+  position: relative;
+  size: cover;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 1%;
+  background-size: contain;
+  overflow: hidden;
+}
+
+* body .container .main_container .right_container .album_list ul li .song_info .number {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  /* identical to box height */
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+* body .container .main_container .right_container .album_list ul li .song_info .song_name_info {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 3%;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #1D1919;
+}
+
+* body .container .main_container .right_container .album_list ul li .artist_info {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  /* identical to box height */
+  color: #505050;
+}
+
+* body .container .main_container .right_container .album_list ul li .song_time {
+  position: relative;
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8em;
+  line-height: 52px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+* body .container .main_container .right_container .album_list ul li .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+* body .container .main_container .right_container .album_list ul li .dropdown .dropbtn {
+  font-size: 3em;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+* body .container .main_container .right_container .album_list ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 16%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+* body .container .main_container .right_container .album_list ul li .dropdown-content a {
+  font-family: "Aeonik";
+  font-weight: bold;
+  float: none;
+  color: #B4A1FF;
+  padding: 0.5vw 0.5vh;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+* body .container .main_container .right_container .album_list ul li .dropdown:hover .dropbtn {
+  color: #B4A1FF;
+}
+
+* body .container .main_container .right_container .album_list ul li .dropdown-content a:hover {
+  background-color: grey;
+}
+
+* body .container .main_container .right_container .album_list ul li .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(#E6E9F0), to(#EEF1F5));
+    background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+    font-size: 55%;
+  }
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .nav {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90vw;
+    height: 75vh;
+    top: 5%;
+    background: rgba(255, 255, 255, 0.63);
+    -webkit-box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 69px;
+  }
+  body .container .main_container .left_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    left: 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .main_container .left_container .mode_list {
+    position: relative;
+    left: 20%;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #000000;
+  }
+  body .container .main_container .left_container .mode_list ul {
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .main_container .left_container .mode_list ul li {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 10px;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .left_container .mode_list ul li button {
+    border: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .mode_list ul li:hover {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    border: 3px solid #B4A1FF;
+    background: #c4c4c4c0;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .personal_list {
+    position: relative;
+    left: 20%;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #000000;
+  }
+  body .container .main_container .left_container .personal_list ul {
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .main_container .left_container .personal_list ul li {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 10px;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .left_container .personal_list ul li button {
+    border: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .personal_list ul li:hover {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    border: 3px solid #B4A1FF;
+    background: #c4c4c4c0;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .volume_list {
+    position: relative;
+    top: 10%;
+    left: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .main_container .left_container .volume_list div {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 20vw;
+    height: 5vh;
+    background: #C4C4C4;
+    -webkit-box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+            box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .volume_list div img {
+    width: 2vw;
+  }
+  body .container .main_container .left_container .volume_list div .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-appearance: none;
+    background: white;
+    outline: none;
+    width: 75%;
+    height: 20px;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+  }
+  body .container .main_container .left_container .volume_list div .slider:hover {
+    opacity: 1;
+  }
+  body .container .main_container .left_container .volume_list div .slider::-webkit-slider-thumb {
+    position: relative;
+    left: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10%;
+    height: 20px;
+    background: #B4A1FF;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .volume_list div .slider::-moz-range-thumb {
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    width: 20px;
+    height: 80%;
+    background: white;
+    cursor: pointer;
+  }
+  body .container .main_container .middle_line {
+    position: relative;
+    width: 0.4%;
+    height: 100%;
+    background: #A49D9D;
+    border-left: 5px solid #A49D9D;
+  }
+  body .container .main_container .right_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .container .main_container .right_container .music_player {
+    position: relative;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body .container .main_container .right_container .music_player .description {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-left: 60px;
+  }
+  body .container .main_container .right_container .music_player .description .hero_img {
+    position: relative;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 13%;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+  body .container .main_container .right_container .music_player .description .others {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info .song_name {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    color: blueviolet;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info .artist_name {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #BAAEAE;
+  }
+  body .container .main_container .right_container .music_player .description .others .buttons {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 70%;
+  }
+  body .container .main_container .right_container .music_player .description .others .buttons .add_button, body .container .main_container .right_container .music_player .description .others .buttons .prio_button {
+    position: relative;
+    width: 15vw;
+    height: 4vh;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #483131;
+    background: #C4C4C4;
+    border-radius: 6px;
+    border: none;
+  }
+  body .container .main_container .right_container .music_player .button_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button {
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li {
+    margin-top: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    color: #C4C4C4;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li .prev, body .container .main_container .right_container .music_player .button_list .action_button li .next {
+    width: 3vw;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li .play {
+    width: 4vw;
+  }
+  body .container .main_container .right_container .music_player .button_list .song_slider {
+    position: relative;
+    margin: 2px;
+    -webkit-appearance: none;
+    background: white;
+    outline: none;
+    width: 75%;
+    height: 10px;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .container .main_container .right_container .music_player .button_list .song_slider .inner_slider {
+    position: relative;
+    width: 15px;
+    background: #B4A1FF;
+  }
+  body .container .main_container .right_container .option_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    top: 25px;
+    width: 50%;
+  }
+  body .container .main_container .right_container .option_list .album {
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .option_list .priority, body .container .main_container .right_container .option_list .fav {
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #CAC8C8;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .album_list {
+    position: relative;
+    width: 90%;
+    height: 60%;
+    overflow-y: scroll;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 40px;
+  }
+  body .container .main_container .right_container .album_list ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  body .container .main_container .right_container .album_list ul li {
+    margin: 2%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #C4C4C4;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    width: 80%;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .image_song {
+    position: relative;
+    size: cover;
+    width: 27%;
+    border-radius: 15px;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .number {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .song_name_info {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #1D1919;
+  }
+  body .container .main_container .right_container .album_list ul li .artist_info {
+    display: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    /* identical to box height */
+    color: #505050;
+  }
+  body .container .main_container .right_container .album_list ul li .song_time {
+    display: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .right_container .album_list ul li .other_dot {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  /*Tablets [601px -> 1200px]*/
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(#E6E9F0), to(#EEF1F5));
+    background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+    font-size: 55%;
+  }
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .nav {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90vw;
+    height: 75vh;
+    top: 5%;
+    background: rgba(255, 255, 255, 0.63);
+    -webkit-box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 69px;
+  }
+  body .container .main_container .left_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    left: 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .main_container .left_container .mode_list {
+    position: relative;
+    left: 20%;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #000000;
+  }
+  body .container .main_container .left_container .mode_list ul {
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .main_container .left_container .mode_list ul li {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 10px;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .left_container .mode_list ul li button {
+    border: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .mode_list ul li:hover {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    border: 3px solid #B4A1FF;
+    background: #c4c4c4c0;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .personal_list {
+    position: relative;
+    left: 20%;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #000000;
+  }
+  body .container .main_container .left_container .personal_list ul {
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .main_container .left_container .personal_list ul li {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 10px;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .left_container .personal_list ul li button {
+    border: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .personal_list ul li:hover {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    border: 3px solid #B4A1FF;
+    background: #c4c4c4c0;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .volume_list {
+    position: relative;
+    top: 10%;
+    left: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .main_container .left_container .volume_list div {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 20vw;
+    height: 5vh;
+    background: #C4C4C4;
+    -webkit-box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+            box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .volume_list div img {
+    width: 2vw;
+  }
+  body .container .main_container .left_container .volume_list div .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-appearance: none;
+    background: white;
+    outline: none;
+    width: 75%;
+    height: 20px;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+  }
+  body .container .main_container .left_container .volume_list div .slider:hover {
+    opacity: 1;
+  }
+  body .container .main_container .left_container .volume_list div .slider::-webkit-slider-thumb {
+    position: relative;
+    left: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10%;
+    height: 20px;
+    background: #B4A1FF;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .volume_list div .slider::-moz-range-thumb {
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    width: 20px;
+    height: 80%;
+    background: white;
+    cursor: pointer;
+  }
+  body .container .main_container .middle_line {
+    position: relative;
+    width: 0.4%;
+    height: 100%;
+    background: #A49D9D;
+    border-left: 5px solid #A49D9D;
+  }
+  body .container .main_container .right_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .container .main_container .right_container .music_player {
+    position: relative;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body .container .main_container .right_container .music_player .description {
+    position: relative;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+  }
+  body .container .main_container .right_container .music_player .description .hero_img {
+    position: relative;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 13%;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+  body .container .main_container .right_container .music_player .description .others {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info .song_name {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    color: blueviolet;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info .artist_name {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #BAAEAE;
+  }
+  body .container .main_container .right_container .music_player .description .others .buttons {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 70%;
+  }
+  body .container .main_container .right_container .music_player .description .others .buttons .add_button, body .container .main_container .right_container .music_player .description .others .buttons .prio_button {
+    position: relative;
+    width: 15vw;
+    height: 4vh;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #483131;
+    background: #C4C4C4;
+    border-radius: 6px;
+    border: none;
+  }
+  body .container .main_container .right_container .music_player .button_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button {
+    margin: 0%;
+    top: -10px;
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 40%;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    color: #C4C4C4;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li .prev, body .container .main_container .right_container .music_player .button_list .action_button li .next {
+    width: 3vw;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li .play {
+    width: 4vw;
+  }
+  body .container .main_container .right_container .music_player .button_list .song_slider {
+    position: relative;
+    margin: 2px;
+    -webkit-appearance: none;
+    background: white;
+    outline: none;
+    width: 75%;
+    height: 10px;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .container .main_container .right_container .music_player .button_list .song_slider .inner_slider {
+    position: relative;
+    width: 15px;
+    background: #B4A1FF;
+  }
+  body .container .main_container .right_container .option_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    top: 25px;
+    width: 50%;
+  }
+  body .container .main_container .right_container .option_list .album {
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .option_list .priority, body .container .main_container .right_container .option_list .fav {
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #CAC8C8;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .album_list {
+    position: relative;
+    width: 90%;
+    height: 50%;
+    overflow-y: scroll;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 40px;
+  }
+  body .container .main_container .right_container .album_list ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  body .container .main_container .right_container .album_list ul li {
+    margin: 2%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #C4C4C4;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    width: 80%;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .image_song {
+    position: relative;
+    background-size: cover;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .number {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .song_name_info {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #1D1919;
+  }
+  body .container .main_container .right_container .album_list ul li .artist_info {
+    display: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    /* identical to box height */
+    color: #505050;
+  }
+  body .container .main_container .right_container .album_list ul li .song_time {
+    display: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .right_container .album_list ul li .other_dot {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(#E6E9F0), to(#EEF1F5));
+    background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+    font-size: 55%;
+  }
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .nav {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90vw;
+    height: 80vh;
+    top: 5%;
+    background: rgba(255, 255, 255, 0.63);
+    -webkit-box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+  }
+  body .container .main_container .left_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: -10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 10%;
+  }
+  body .container .main_container .left_container .mode_list {
+    position: relative;
+    left: 20%;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #000000;
+  }
+  body .container .main_container .left_container .mode_list ul {
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .main_container .left_container .mode_list ul li {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 10px;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .left_container .mode_list ul li button {
+    border: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .mode_list ul li:hover {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    border: 3px solid #B4A1FF;
+    background: #c4c4c4c0;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .personal_list {
+    position: relative;
+    left: 20%;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #000000;
+  }
+  body .container .main_container .left_container .personal_list ul {
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .main_container .left_container .personal_list ul li {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 10px;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .left_container .personal_list ul li button {
+    border: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .personal_list ul li:hover {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    border: 3px solid #B4A1FF;
+    background: #c4c4c4c0;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .volume_list {
+    position: relative;
+    top: -10%;
+    left: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .main_container .left_container .volume_list div {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 5vw;
+    height: 20vh;
+    background: #C4C4C4;
+    -webkit-box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+            box-shadow: 0px 4px 4px rgba(31, 28, 28, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .left_container .volume_list div img {
+    width: 2vw;
+  }
+  body .container .main_container .left_container .volume_list div .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-appearance: slider-vertical;
+    background: #B4A1FF;
+    outline: none;
+    width: 20px;
+    height: 75%;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+  }
+  body .container .main_container .left_container .volume_list div .slider:hover {
+    opacity: 1;
+  }
+  body .container .main_container .left_container .volume_list div .slider::-webkit-slider-thumb {
+    position: relative;
+    left: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-appearance: slider-vertical;
+    appearance: none;
+    width: 20px;
+    height: 80%;
+    background: white;
+    cursor: pointer;
+  }
+  body .container .main_container .left_container .volume_list div .slider::-moz-range-thumb {
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    width: 20px;
+    height: 80%;
+    background: white;
+    cursor: pointer;
+  }
+  body .container .main_container .middle_line {
+    position: relative;
+    width: 0.4%;
+    height: 100%;
+    background: #A49D9D;
+    border-left: 5px solid #A49D9D;
+  }
+  body .container .main_container .right_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  body .container .main_container .right_container .music_player {
+    position: relative;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .main_container .right_container .music_player .description {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+  }
+  body .container .main_container .right_container .music_player .description .hero_img {
+    position: relative;
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 13%;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  body .container .main_container .right_container .music_player .description .others {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info .song_name {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    color: blueviolet;
+  }
+  body .container .main_container .right_container .music_player .description .others .song_artist_info .artist_name {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #BAAEAE;
+  }
+  body .container .main_container .right_container .music_player .description .others .buttons {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  body .container .main_container .right_container .music_player .button_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    top: 50px;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button {
+    position: relative;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li {
+    margin-top: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    color: #C4C4C4;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li .prev, body .container .main_container .right_container .music_player .button_list .action_button li .next {
+    width: 4vw;
+  }
+  body .container .main_container .right_container .music_player .button_list .action_button li .play {
+    width: 5vw;
+  }
+  body .container .main_container .right_container .music_player .button_list .song_slider {
+    -webkit-appearance: none;
+    background: white;
+    outline: none;
+    width: 75%;
+    height: 20px;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .container .main_container .right_container .music_player .button_list .song_slider .inner_slider {
+    position: relative;
+    width: 10%;
+    background: #B4A1FF;
+  }
+  body .container .main_container .right_container .option_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    top: 25%;
+    width: 100%;
+  }
+  body .container .main_container .right_container .option_list .album {
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .option_list .priority, body .container .main_container .right_container .option_list .fav {
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #CAC8C8;
+    cursor: pointer;
+  }
+  body .container .main_container .right_container .album_list {
+    position: relative;
+    width: 90%;
+    height: 35%;
+    overflow-y: scroll;
+    top: 20%;
+  }
+  body .container .main_container .right_container .album_list ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  body .container .main_container .right_container .album_list ul li {
+    margin: 2%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #C4C4C4;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    width: 80%;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .image_song {
+    position: relative;
+    size: cover;
+    width: 27%;
+    border-radius: 15px;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .number {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    /* identical to box height */
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .right_container .album_list ul li .song_info .song_name_info {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    /* identical to box height */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #1D1919;
+  }
+  body .container .main_container .right_container .album_list ul li .artist_info {
+    display: none;
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    /* identical to box height */
+    color: #505050;
+  }
+  body .container .main_container .right_container .album_list ul li .song_time {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8em;
+    /* identical to box height */
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .main_container .right_container .album_list ul li .other_dot {
+    position: relative;
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=index.css.map */

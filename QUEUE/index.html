@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Queue</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">Music - Queue</div>
+        <div class="main_container">
+            <div class="left_container">
+                <div class="mode_list">
+                    Mode
+                    <ul>
+                        <li><button class="normal_m" onclick="normal_mode()"><img class="normal_m_img" src="https://api.iconify.design/fluent/music-note-1-24-filled.svg" alt="icon">&nbsp; Normal </button></li>
+                        <li><button class="circular_m" onclick="circular_mode()"><img class="circular_m_img" src="https://api.iconify.design/clarity/cd-dvd-line.svg" alt="icon">&nbsp; Circular</button></li>
+                        <li><button class="priority_m" onclick="priority_mode()"><img class="priority_m_img" src="https://api.iconify.design/ant-design/ordered-list-outlined.svg" alt="icon">&nbsp; Priority</button></li>
+                    </ul>
+                </div>
+                <div class="personal_list">
+                    Personal
+                    <ul>
+                        <li><button class="show_fav" onclick="show_favorite()"><img class="show_fav_img" src="https://api.iconify.design/ant-design/heart-filled.svg" alt="icon">&nbsp; Favorite</button></li>
+                        <li><button class="show_alb" onclick="show_album()"><img class="show_alb_img" src="https://api.iconify.design/bxs/playlist.svg" alt="icon">&nbsp; Playlist</button></li>
+                    </ul>
+
+                </div>
+                <div class="volume_list">
+                    <div><img src="https://api.iconify.design/bi/volume-up-fill.svg" alt=""> <input type="range" min="1" max="100" value="0" class="slider" id="myRange" oninput="volume_change(this.value)"></div>
+                </div>
+            </div>
+            <div class="middle_line"></div>
+            <div class="right_container">
+                <div class="music_player">
+                    <div class="description">
+                        <!-- <span class="hero_img"> -->
+                            <img class="hero_img"  src="" alt="">
+                        <!-- </span> -->
+                        <div class="others">
+                            <div class="song_artist_info">
+                                <div class="song_name"></div>
+                                <div class="artist_name"></div>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="add_to_fav()" class="add_button">Add</button>
+                                <button onclick="add_to_prio(this)" class="prio_button">Prio 1</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_list">
+                        <ul class="action_button">
+                            <li><img class="prev" onclick="set_prev_song()" src="https://api.iconify.design/fluent/previous-32-filled.svg?color=%23c4c4c4" alt=""></li>
+                            <li><img class="play" onclick="play_audio_song()" src="https://api.iconify.design/clarity/play-solid.svg?color=%23c4c4c4" alt=""></li>
+                            <li><img class="next" onclick="set_next_song()"src="https://api.iconify.design/fluent/next-32-filled.svg?color=%23c4c4c4" alt=""></li>
+                        </ul>
+                        <div class="song_slider"><div class="inner_slider"></div></div>
+                        <!-- <input type="range" min="1" max="100" value="0" class="song_slider"> -->
+                    </div>
+                </div>
+                <div class="option_list">
+                    <div onclick="show_album()" class="album">Album</div>
+                    <!-- <div onclick="show_priority()" class="priority">Priority</div> -->
+                    <div onclick="show_favorite()" class="fav">Favorite</div>
+                </div>
+                <div class="album_list">
+                    <ul class="music_container">
+                        <!-- <li><div class="song_info"><img class="image_song" src="https://source.unsplash.com/random/1920x1080" alt=""><div class="number">1</div><div class="song_name_info">Breakeup song</div></div><div class="artist_info">Honey singh</div><div class="song_time">3:22</div><div class="other_dot">...</div></li>
+                        <li><div class="song_info"><img class="image_song" src="https://source.unsplash.com/random/1920x1080" alt=""><div class="number">1</div><div class="song_name_info">Breakeup song</div></div><div class="artist_info">Honey singh</div><div class="song_time">3:22</div><div class="other_dot">...</div></li>
+                        <li><div class="song_info"><img class="image_song" src="https://source.unsplash.com/random/1920x1080" alt=""><div class="number">1</div><div class="song_name_info">Breakeup song</div></div><div class="artist_info">Honey singh</div><div class="song_time">3:22</div><div class="other_dot">...</div></li>
+                        <li><div class="song_info"><img class="image_song" src="https://source.unsplash.com/random/1920x1080" alt=""><div class="number">1</div><div class="song_name_info">Breakeup song</div></div><div class="artist_info">Honey singh</div><div class="song_time">3:22</div><div class="other_dot">...</div></li>
+                        <li><div class="song_info"><img class="image_song" src="https://source.unsplash.com/random/1920x1080" alt=""><div class="number">1</div><div class="song_name_info">Breakeup song</div></div><div class="artist_info">Honey singh</div><div class="song_time">3:22</div><div class="other_dot">...</div></li> -->
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="/static/js/index.js"></script> -->
+<script src="/static/js/index.js"></script>
+<script src="/sportify.js"></script>
+</html> 
