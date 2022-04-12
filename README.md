@@ -12,6 +12,7 @@
 
 ### The different data-structues and algorithms by which i build projects are
 * [Arrays - 2048](https://github.com/aditya-2703/DSA-HUB/tree/main/ARRAY%20-%20MATRIX)
+* [Stack - Card Stack](https://github.com/aditya-2703/DSA-HUB/tree/main/STACK)
 * <a href="https://github.com/aditya-2703/DSA-HUB/tree/main/STACK" style="color: black; text-decoration: underline;text-decoration-style: dotted;">Stack - Card Stack</a>
 * Stack - Card Stack (https://github.com/aditya-2703/DSA-HUB/tree/main/STACK)
 * Queue - Music Queue (https://github.com/aditya-2703/DSA-HUB/tree/main/QUEUE)
