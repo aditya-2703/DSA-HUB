@@ -66,12 +66,11 @@ Here's why:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This is how you can use this repository to understand and for contribution.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Because this is websites so you don't need to install anything but for css you have to install sass compiler.
 * npm
   ```sh
   npm install npm@latest -g
