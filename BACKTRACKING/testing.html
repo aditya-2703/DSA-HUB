@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back-tracking</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="icon" type="image/png" sizes="128x128" href="/static/images/logo.png">
+</head>
+<body>
+    <nav class="nav_header">
+        <button class="level" onclick="choosen_level_list()"><div class="level_text">Level</div>
+            <ul class="dropdown_level_list">
+                <li onclick="choosen_level_from_nav(this)">Easy</li>
+                <li onclick="choosen_level_from_nav(this)">Medium</li>
+                <li onclick="choosen_level_from_nav(this)">Hard</li>
+            </ul>
+        
+        </button>
+        <button class="time" onclick="choosen_time_list(this)"><div class="time_text">Time</div>
+            <ul class="dropdown_time_list">
+                <li onclick="choosen_time_from_nav(this)">10 min</li>
+                <li onclick="choosen_time_from_nav(this)">15 min</li>
+                <li onclick="choosen_time_from_nav(this)">30 min</li>
+            </ul>
+        </button>
+        <button class="theme" onclick="choosen_theme_list(this)"><div class="theme_text">Theme</div>
+            <ul class="dropdown_theme_list">
+                <li onclick="choosen_theme_from_nav(this)">Light</li>
+                <li onclick="choosen_theme_from_nav(this)">Dark</li>
+            </ul>
+        
+        </button>
+    </nav>
+    <div class="container">
+        <div class="big_heading">
+            suduko
+        </div>
+        <div class="game_start_big_heading">
+            <div class="one">uko</div>
+            <div class="two">sud</div>
+        </div>
+        <div class="start_button" onclick="start()">
+            Start
+        </div>
+        <div class="suduko_board">
+
+        </div>
+        
+        <div class="big_timer">
+            00:00
+        </div>
+    </div>
+</body>
+<script src="/testing_feature/testing.js"></script>
+</html>
