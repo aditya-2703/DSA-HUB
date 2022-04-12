@@ -96,6 +96,21 @@ Usage of this project is to know how you can use this problem solvin skills in p
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Links 
+
+The different sub-projects link is mentioned below
+* [Array - 2048](https://github.com/aditya-2703/DSA-HUB/tree/main/ARRAY%20-%20MATRIX)
+* [Stack - Card Stack](https://github.com/aditya-2703/DSA-HUB/tree/main/STACK)
+* [Queue - Music Queue](https://github.com/aditya-2703/DSA-HUB/tree/main/QUEUE)
+* [LINKED LIST - Snake Game](https://github.com/aditya-2703/DSA-HUB/tree/main/LINKED_LIST)
+* [String - Typing Game](https://github.com/aditya-2703/DSA-HUB/tree/main/STRING)
+* [Searching - Number Guessing](https://github.com/aditya-2703/DSA-HUB/tree/main/SEARCHING)
+* [Sorting - Sorting Visualizer](https://github.com/aditya-2703/DSA-HUB/tree/main/SORTING)
+* [Bit Manipulation - Bit Calculator](https://github.com/aditya-2703/DSA-HUB/tree/main/BIT-MAGIC)
+* [Backtracking - Suduko Solver](https://github.com/aditya-2703/DSA-HUB/tree/main/BACKTRACKING)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 <!-- LICENSE -->
 ## License
