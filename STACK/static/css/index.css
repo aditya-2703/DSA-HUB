@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/static/images/bg.jpg"), #FFFFFF;
+  background-size: auto;
+  font-size: 100%;
+}
+
+body .content_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .content_box .heading {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 61px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.39em;
+  color: #070000;
+  background: transparent;
+}
+
+body .content_box .container_main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .content_box .container_main .container_one, body .content_box .container_main .container_two {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .content_box .container_main .container_one .card_img_one, body .content_box .container_main .container_one .card_img_two, body .content_box .container_main .container_two .card_img_one, body .content_box .container_main .container_two .card_img_two {
+  position: relative;
+  width: 35%;
+  border-radius: 10px;
+  background: transparent;
+}
+
+body .content_box .container_main .container_one .name_one, body .content_box .container_main .container_one .name_two, body .content_box .container_main .container_two .name_one, body .content_box .container_main .container_two .name_two {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 50px;
+  /* identical to box height */
+  text-align: center;
+  color: #070000;
+  background: transparent;
+}
+
+body .content_box .container_main .container_one .score_one, body .content_box .container_main .container_one .score_two, body .content_box .container_main .container_two .score_one, body .content_box .container_main .container_two .score_two {
+  position: relative;
+  font-size: 4em;
+  background: transparent;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 82px;
+  text-align: center;
+  text-shadow: 1px 1px 5px green;
+  color: white;
+}
+
+body .content_box .container_main .container_one #shuffle1_cont, body .content_box .container_main .container_one #shuffle2_cont, body .content_box .container_main .container_two #shuffle1_cont, body .content_box .container_main .container_two #shuffle2_cont {
+  position: relative;
+  display: none;
+  margin-bottom: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
+  background: transparent;
+}
+
+body .content_box .container_main .container_one #shuffle1_cont #shuffle1, body .content_box .container_main .container_one #shuffle1_cont #shuffle2, body .content_box .container_main .container_one #shuffle2_cont #shuffle1, body .content_box .container_main .container_one #shuffle2_cont #shuffle2, body .content_box .container_main .container_two #shuffle1_cont #shuffle1, body .content_box .container_main .container_two #shuffle1_cont #shuffle2, body .content_box .container_main .container_two #shuffle2_cont #shuffle1, body .content_box .container_main .container_two #shuffle2_cont #shuffle2 {
+  position: relative;
+  width: 35%;
+  z-index: 100;
+  background: transparent;
+}
+
+body .content_box .container_main .container_one #shuffle1_cont:hover, body .content_box .container_main .container_one #shuffle2_cont:hover, body .content_box .container_main .container_two #shuffle1_cont:hover, body .content_box .container_main .container_two #shuffle2_cont:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+body .content_box .container_main .container_mid {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .content_box .container_main .container_mid .board {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+}
+
+body .content_box .container_main .container_mid .board .board_img {
+  position: relative;
+  width: 40%;
+  background: transparent;
+}
+
+body .content_box .container_main .container_mid .board .board_button {
+  position: relative;
+  width: 50%;
+  height: 20%;
+  margin-top: 20px;
+  background: #070000;
+  border-radius: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+body .content_box .container_main .container_mid .board .board_button:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+body .content_box .container_main .container_mid .board .img_board {
+  width: 30%;
+  background: transparent;
+}
+
+body .content_box .container_main .container_mid .board .add {
+  position: relative;
+  top: 5%;
+  z-index: 100;
+  background: lightskyblue;
+  border-radius: 6px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+body .content_box .container_main .container_mid .board .add:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: lightskyblue;
+}
+
+body .content_box .container_main .container_mid .board .board_len {
+  position: relative;
+  top: 18%;
+  font-size: 5em;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 5px black;
+  background: transparent;
+}
+
+body .content_box .win_msg {
+  position: relative;
+  background: transparent;
+  font-family: "Roboto",'Courier New', Courier, monospace;
+  font-size: 5em;
+  margin-top: 7%;
+  text-align: center;
+}
+
+body .content_box .win_gif {
+  position: relative;
+  width: 25%;
+  background: transparent;
+}
+
+body .content_box .restart_btn {
+  margin-top: 7%;
+  width: 20%;
+  height: 10%;
+  background: #000000;
+  border-radius: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  body {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  body {
+    font-size: 55%;
+  }
+  body .content_box .restart_btn {
+    margin-top: 7%;
+    width: 30%;
+    height: 30%;
+  }
+  body .content_box .container_main {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .content_box .container_main .container_one, body .content_box .container_main .container_two {
+    position: relative;
+    margin-top: 10%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .content_box .container_main .container_one .card_img_one, body .content_box .container_main .container_one .card_img_two, body .content_box .container_main .container_two .card_img_one, body .content_box .container_main .container_two .card_img_two {
+    position: relative;
+    width: 15%;
+    border-radius: 10px;
+    background: transparent;
+  }
+  body .content_box .container_main .container_one .name_one, body .content_box .container_main .container_one .name_two, body .content_box .container_main .container_two .name_one, body .content_box .container_main .container_two .name_two {
+    position: relative;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 50px;
+    /* identical to box height */
+    text-align: center;
+    color: #070000;
+    background: transparent;
+  }
+  body .content_box .container_main .container_one .score_one, body .content_box .container_main .container_one .score_two, body .content_box .container_main .container_two .score_one, body .content_box .container_main .container_two .score_two {
+    position: relative;
+    font-size: 4em;
+    background: transparent;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 82px;
+    text-align: center;
+    text-shadow: 1px 1px 5px green;
+    color: white;
+  }
+  body .content_box .container_main .container_one #shuffle1_cont, body .content_box .container_main .container_one #shuffle2_cont, body .content_box .container_main .container_two #shuffle1_cont, body .content_box .container_main .container_two #shuffle2_cont {
+    position: relative;
+    display: none;
+    margin-bottom: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1000;
+    background: transparent;
+  }
+  body .content_box .container_main .container_one #shuffle1_cont #shuffle1, body .content_box .container_main .container_one #shuffle1_cont #shuffle2, body .content_box .container_main .container_one #shuffle2_cont #shuffle1, body .content_box .container_main .container_one #shuffle2_cont #shuffle2, body .content_box .container_main .container_two #shuffle1_cont #shuffle1, body .content_box .container_main .container_two #shuffle1_cont #shuffle2, body .content_box .container_main .container_two #shuffle2_cont #shuffle1, body .content_box .container_main .container_two #shuffle2_cont #shuffle2 {
+    position: relative;
+    width: 15%;
+    z-index: 100;
+    background: transparent;
+  }
+  body .content_box .container_main .container_one #shuffle1_cont:hover, body .content_box .container_main .container_one #shuffle2_cont:hover, body .content_box .container_main .container_two #shuffle1_cont:hover, body .content_box .container_main .container_two #shuffle2_cont:hover {
+    background: rgba(0, 0, 0, 0.22);
+  }
+  body .content_box .container_main .container_mid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .content_box .container_main .container_mid .board {
+    position: relative;
+    padding: 10%;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 100;
+  }
+  body .content_box .container_main .container_mid .board .board_img {
+    position: relative;
+    width: 50%;
+    background: transparent;
+  }
+  body .content_box .container_main .container_mid .board .board_button {
+    position: relative;
+    width: 50%;
+    height: 20%;
+    margin-top: 20px;
+    background: #070000;
+    border-radius: 6px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  body .content_box .container_main .container_mid .board .board_button:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+  }
+  body .content_box .container_main .container_mid .board .img_board {
+    width: 40%;
+    background: transparent;
+  }
+  body .content_box .container_main .container_mid .board .add {
+    position: relative;
+    top: 5%;
+    z-index: 100;
+    background: lightskyblue;
+    border-radius: 6px;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+  }
+  body .content_box .container_main .container_mid .board .add:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: lightskyblue;
+  }
+  body .content_box .container_main .container_mid .board .board_len {
+    position: relative;
+    top: 5%;
+    font-size: 6em;
+    text-align: center;
+    color: gainsboro;
+    color: black;
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  body {
+    font-size: 55%;
+  }
+  body .content_box .restart_btn {
+    margin-top: 7%;
+    width: 40%;
+    height: 40%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

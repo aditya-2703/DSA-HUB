@@ -1,0 +1,27 @@
+-Rule info
+    - First both player has given equal cards (52/2 = 26 26)
+    - one by one turn wise players put top cards into floor 
+    - if top card of floor matches the top of card of player which has turn then the all floor card gives to that player
+    - if any one of player has zero card left then game ends and the opposite player wins
+
+-How it works
+    - there is 3 stacks
+    - 1 for player 1
+        - each time when player 1 has turn then the top of card pops and push into floor stack
+        - each time also we first checks that peep of this and floor is equal or not if equal then the whole floor stack is pushed into this stack
+    - 2 for player 2
+        - each time when player 2 has turn then the top of card pops and push into floor stack
+        - each time also we first checks that peep of this and floor is equal or not if equal then the whole floor stack is pushed into this stack
+    - 3 for floor 
+        - each time if card matches (top of card) then we clear this stack and push all the element to those player
+        - if cards does not matches then will simply push that cards into this stack
+    - score 
+        - it shows how many cards each player have to remind player
+    - Here will use
+        - stack
+            - push - to insert element
+            - pop  - to delete  or remove element
+            - peep - to get the top most element
+    
+
+

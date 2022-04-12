@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack-card</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="icon" type="png" sizes="64x64" href="icon.png">
+</head>
+<body>
+    <div class="content_box">
+        <h1 class="heading">Card stack</h1>
+        <div id="container_main" class="container_main">
+            <div class="container_one">
+                <a id="shuffle1_cont" class="shuffle_item" href=""><img id="shuffle1" src="/static/images/pointer.png" alt=""></a>
+                <img id="player1_card"  class="card_img_one" src="/static/images/player1.png" alt="">
+                <h1 id="player1" class="name_one">Player1</h1>
+                <div id="score1" class="score_one">0</div>
+            </div>
+            <div class="container_mid">
+                <div id="board" class="board">
+                    <img id="borad_img" class="board_img" src="/static/images/board_start.png" alt="">
+                    <a class="board_button" onclick="init_start()">Start</a>
+                </div>
+            </div>
+
+            <div class="container_two">
+                <a id="shuffle2_cont" class="shuffle_item" href=""><img id="shuffle2" src="/static/images/pointer.png" alt=""></a>
+                <img id="player2_card" class="card_img_two" src="/static/images/player2.png" alt="">
+                <h1 id="player2" class="name_two">Player2</h1>
+                <div id="score2" class="score_two">0</div>
+    
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/index.js"></script>
+</html>
