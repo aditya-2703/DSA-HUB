@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit-Calc</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="icon" type="png" href="/static/images/logo.png">
+</head>
+<body>
+    <!-- <h1 class="heading">Bit Calc</h1> -->
+    <div class="container">
+        <div class="child_container_1">
+            <input id="input_field1" class="input_num1" type="text" value="0">
+            <input id="input_field2" class="input_num2" type="text" value="0">
+        </div>
+        <div class="child_container_2">
+            <button onclick="and_action()" class="and_button btn">and</button>
+            <button onclick="or_action()" class="or_button btn">or</button>
+            <button onclick="xor_action()" class="xor_button btn">xor</button>
+        </div>
+        <div class="child_container_3">
+            <button onclick="plus()"  class="plus_button btn">+</button>
+            <button onclick="minus()"  class="minus_button btn">-</button>
+            <button onclick="binary()"  class="bin_button btn">bin</button>
+            <button onclick="hexa()"  class="hex_button btn">hex</button>
+            <button onclick="clear_value()"  class="clr_button btn">clr</button>
+
+        </div>
+        <div class="child_container_4">
+            <button onclick="mul()" class="mul_button btn">*</button>
+            <button onclick="div()" class="div_button btn">&#247;</button>
+            <button onclick="square()" class="square_button btn">x²</button>
+            <button onclick="grey()" class="grey_button btn">grey</button>
+            <button onclick="full()" class="full_button btn">full</button>
+        </div>
+        <div class="child_container_5">
+            <input id="output_filed" type="text" class="result">
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

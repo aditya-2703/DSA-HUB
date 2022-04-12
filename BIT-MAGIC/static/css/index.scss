@@ -1,0 +1,230 @@
+* {
+    // background: linear-gradient(90deg, #A1C4FD 0%, #C2E9FB 100%);
+    body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("/static/images/new_bg.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 100%;
+     
+
+            .container {
+                position: relative;
+                width: 80vw;
+                height: 65vh;
+                top: 190px;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 0 5px lightblue;
+                backdrop-filter: blur(1px);
+
+                border-radius: 58px;
+                
+                
+                .child_container_1 {
+                   
+                    position: relative;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
+                    flex-direction: col;
+                    background: transparent;         
+
+                    #input_field1 , #input_field2{
+                        position: relative;
+                        width: 45%;
+                        height: 50px;
+                        top: 20px;
+                        border: none;
+                        background: rgba(0, 0, 0,0.2);
+                        box-sizing: border-box;
+                        border-radius: 39.5px;
+                        background: white;
+        
+                        text-align: center;
+                        font-size: 2em;
+                        font-weight: bolder;
+                    }
+                    
+
+                }
+
+                .child_container_2 {
+                    position: absolute;
+                    top: 100px;
+                    // border: 1px solid blue;
+                    width: 100%;
+                    height: 15%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    background: transparent;
+                    border: none;
+
+
+                    .and_button ,.or_button,.xor_button{ 
+                        width: 25%;
+                        height: 55px;
+                        color: white;
+                        font-weight: bolder;
+                        // font-size: 2em;
+                        font-size: 2em;
+
+                        text-shadow: 8px 8px 10px black;
+
+                        background: rgba( 74, 144, 226, 1 );
+                        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                        backdrop-filter: blur( 20px );
+                        -webkit-backdrop-filter: blur( 20px );
+                        border-radius: 10px;
+                        border: 1px solid rgba( 255, 255, 255, 0.18 );
+                    }
+                    .and_button:hover ,.or_button:hover ,.xor_button:hover{
+                        background: rgba( 8, 120, 255, 1 );
+                        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                        backdrop-filter: blur( 20px );
+                        -webkit-backdrop-filter: blur( 20px );
+                        border-radius: 10px;
+                        border: 1px solid rgba( 255, 255, 255, 0.18 );             
+                        text-shadow: 10px 10px 1px black;
+                    
+                    
+                    }
+
+                 
+                }
+
+                .child_container_3 {
+                    position: absolute;
+                    top: 200px;
+                    // border: 1px solid blue;
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
+                    background: transparent;
+
+                    .plus_button ,.minus_button ,.bin_button ,.hex_button,.clr_button{
+                        width: 15%;
+                        height: 55px;
+                        color: white;
+                        font-weight: bolder;
+                        font-size: 2em;
+
+                        text-shadow: 8px 8px 10px black;
+
+
+                        background: rgba( 74, 144, 226, 1 );
+                        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                        backdrop-filter: blur( 20px );
+                        -webkit-backdrop-filter: blur( 20px );
+                        border-radius: 10px;
+                        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+                    }
+                    .plus_button:hover ,.minus_button:hover,.bin_button:hover ,.hex_button:hover,.clr_button:hover{
+                        background: rgba( 8, 120, 255, 1 );
+                        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                        backdrop-filter: blur( 20px );
+                        -webkit-backdrop-filter: blur( 20px );
+                        border-radius: 10px;
+                        border: 1px solid rgba( 255, 255, 255, 0.18 );             
+                        text-shadow: 10px 10px 1px black;
+                    
+                    }
+                }
+
+                .child_container_4 {
+                    position: absolute;
+                    top: 300px;
+                    // border: 1px solid blue;
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
+                    background: transparent;
+
+                    .mul_button , .div_button ,.square_button ,.grey_button,.full_button{
+                        width: 15%;
+                        height: 55px;
+                        color: white;
+                        font-weight: bolder;
+                        font-size: 2em;
+                       
+                        
+                        text-shadow: 8px 8px 10px black;
+
+                        background: rgba( 74, 144, 226, 1 );
+                        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                        backdrop-filter: blur( 20px );
+                        -webkit-backdrop-filter: blur( 20px );
+                        border-radius: 10px;
+                        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+                    }
+                    .mul_button:hover ,.div_button:hover,.square_button:hover ,.grey_button:hover,.full_button:hover{
+                        background: rgba( 8, 120, 255, 1 );
+                        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                        backdrop-filter: blur( 20px );
+                        -webkit-backdrop-filter: blur( 20px );
+                        border-radius: 10px;
+                        border: 1px solid rgba( 255, 255, 255, 0.18 );             
+                        text-shadow: 10px 10px 1px black;
+                    
+                    }
+
+                   
+                }
+
+                .child_container_5 {
+                    position: absolute;
+                    top: 400px;
+                    // border: 1px solid blue;
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
+                    background: transparent;
+
+                    .result {
+                        width: 95%;
+                        height: 59px;
+                        left: 125px;
+                        top: 400px;
+
+                        border: none;
+                        background: rgba(0, 0, 0,0.2);
+                        box-sizing: border-box;
+                        border-radius: 39.5px;
+                        background: white;
+
+                        text-align: center;
+                        font-size: clamp(40px, 3vw, 32px);
+                        font-weight: bolder;
+
+
+                    }
+                }
+            }
+
+            button {
+                cursor: pointer;
+            }
+            
+
+
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    body{
+        background:url("/static/images/bg_mini.png");
+        background-size: cover;
+        font-size: 55%;
+    }   
+}
