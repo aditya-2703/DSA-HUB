@@ -72,7 +72,7 @@ This is how you can use this repository to understand and for contribution.
 
 Because this is websites so you don't need to install anything but for css you have to install sass compiler.
 * Run Html file
-  ``` npm install -g sass
+  ```npm install -g sass
   ```
 
 ### Installation
