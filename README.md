@@ -11,7 +11,7 @@
 --------
 
 ### The different data-structues and algorithms by which i build projects are
-* Arrays - 2048 (https://github.com/aditya-2703/DSA-HUB/tree/main/ARRAY%20-%20MATRIX)
+* ![Arrays - 2048](https://github.com/aditya-2703/DSA-HUB/tree/main/ARRAY%20-%20MATRIX)
 * Stack - Card Stack (https://github.com/aditya-2703/DSA-HUB/tree/main/STACK)
 * Queue - Music Queue (https://github.com/aditya-2703/DSA-HUB/tree/main/QUEUE)
 * Linked List - Snake Game (https://github.com/aditya-2703/DSA-HUB/tree/main/LINKED_LIST)
