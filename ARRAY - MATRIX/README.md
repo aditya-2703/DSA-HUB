@@ -81,6 +81,7 @@ Array - 2048
 ## What it looks like
 
 
-![App Screenshot](./poster.jpeg)
-
+<p align="center">
+  <img src="0.gif">
+</p>
   
