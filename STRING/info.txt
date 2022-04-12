@@ -1,0 +1,18 @@
+Dequeue - 
+    - start
+        - random paragraph generate by this api
+        - timer also starts 
+        - we make queue of all the characters
+        - player types 
+            - if correct then dequeue()
+            - else will do nothing 
+    - end 
+        - when all the text are typed by user then game ends
+        - if queue is empty then there is no mistakes done by user
+        - else will fetch data from queue and highlight it so that user can see the mistakes
+        - will also count the mistakes 
+        - last will display all the stuff on result pannel
+
+
+
+api - https://baconipsum.com/api/?type=meat-and-filler

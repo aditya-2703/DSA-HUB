@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="icon" sizes="128x128" href="/static/images/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="inbuild_cont">Typing and read receipts make a lot of sense for messaging. You write a letter, you put it in an envelope, you send it to a friend, and you want to know when they get it. It's like FedEx - they let you know when the package gets dropped off.</div>
+        <div class="input_field">
+            <input id="textfiled" type="text">
+            <div class="timer">00:00</div>
+        </div>
+        <div class="button" onclick="game_init()">
+            Start
+        </div>
+        <div class="result_cont">
+            <div class="heading">
+                Result
+            </div>
+            <ul>
+                <li class="wpm">WPM<h1 id="wpm">0</h1></li>
+                <hr>
+                <li>Currect Word<h1 id="result_currect_word">0</h1></li>
+                <hr>
+                <li>Wrong Word<h1 id="result_wrong_word">0</h1></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="/index.js"></script>
+</html>
