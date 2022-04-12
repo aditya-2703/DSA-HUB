@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Actor&family=Aldrich&family=Red+Rose:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  font-size: 100%;
+}
+
+* body .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+* body .container .heading {
+  position: relative;
+  font-family: 'Actor', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5em;
+  line-height: 132px;
+  color: #000000;
+}
+
+* body .container .button_list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+* body .container .button_list .btn {
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 7px;
+  background: #FFDCDC;
+  font-size: 1.5em;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container .statement {
+  position: relative;
+  font-family: 'Actor';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4em;
+  color: #000000;
+}
+
+* body .container .hero {
+  position: relative;
+  width: 30vw;
+  height: 50vh;
+}
+
+* body .container .main_number {
+  display: none;
+  position: relative;
+  font-family: 'Actor';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17em;
+  line-height: 300px;
+  color: #212121;
+}
+
+* body .container .option_list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container .option_list .low, * body .container .option_list .win, * body .container .option_list .high {
+  position: relative;
+  width: 200px;
+  height: 240px;
+  border-radius: 10px;
+  background: #FFDCDC;
+  font-family: 'Actor';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  text-align: center;
+  color: #000000;
+}
+
+* body .container .option_list .op:hover {
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+* body .container .hero_animation {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  body {
+    font-size: 55%;
+  }
+  body .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  body .container .heading {
+    position: relative;
+    font-family: 'Actor', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5em;
+    line-height: 132px;
+    color: #000000;
+  }
+  body .container .button_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  body .container .button_list .btn {
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    background: #FFDCDC;
+    font-size: 2em;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .statement {
+    position: relative;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5em;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .hero {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+  }
+  body .container .main_number {
+    display: none;
+    position: relative;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20em;
+    line-height: 200px;
+    color: #212121;
+  }
+  body .container .option_list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .option_list .low, body .container .option_list .win, body .container .option_list .high {
+    position: relative;
+    width: 150px;
+    height: 190px;
+    border-radius: 10px;
+    background: #FFDCDC;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .option_list .op:hover {
+    margin-top: -10px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  body {
+    font-size: 55%;
+  }
+  body .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  body .container .heading {
+    position: relative;
+    font-family: 'Actor', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5em;
+    line-height: 132px;
+    color: #000000;
+  }
+  body .container .button_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  body .container .button_list .btn {
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    background: #FFDCDC;
+    font-size: 2em;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .statement {
+    position: relative;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5em;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .hero {
+    position: relative;
+    width: 50vw;
+    height: 30vh;
+  }
+  body .container .main_number {
+    display: none;
+    position: relative;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20em;
+    line-height: 100px;
+    margin-bottom: 100px;
+    color: #212121;
+  }
+  body .container .option_list {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: none;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .option_list .low, body .container .option_list .win, body .container .option_list .high {
+    position: relative;
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+    background: #FFDCDC;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .option_list .op:hover {
+    margin-top: -10px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  body {
+    font-size: 35%;
+  }
+  body .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  body .container .heading {
+    position: relative;
+    font-family: 'Actor', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 132px;
+    color: #000000;
+  }
+  body .container .button_list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 20%;
+  }
+  body .container .button_list .btn {
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    background: #FFDCDC;
+    font-size: 3em;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .statement {
+    position: relative;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5em;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .hero {
+    position: relative;
+    width: 60vw;
+    height: 30vh;
+  }
+  body .container .main_number {
+    display: none;
+    position: relative;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20em;
+    line-height: 100px;
+    margin-bottom: 100px;
+    color: #212121;
+  }
+  body .container .option_list {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: none;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .option_list .low, body .container .option_list .win, body .container .option_list .high {
+    position: relative;
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+    background: #FFDCDC;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5em;
+    text-align: center;
+    color: #000000;
+  }
+  body .container .option_list .op:hover {
+    margin-top: -10px;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=index.css.map */

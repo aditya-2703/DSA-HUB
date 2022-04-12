@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="icon" sizes="128" href="/static/images/icon.png">
+</head>
+<body>
+    <nav>
+        <div class="nav_box">
+            <!-- <div class="nav_img">
+                <img src="/static/images/icon.png" alt="">  
+            </div> -->
+            <div class="heading"><p class="heading_text">Think of Any Number Between 1-100</p></div>
+            <div class="second_heading_winning">I Guessed Your Number</div>
+            <div class="no_of_steps">In xx stpes</div>
+
+        </div>
+    </nav>
+    
+
+    <div class="select_method">
+        <div class="method">
+                <select class="method_list" name="opts" id="opts" onchange="on_method_select(this)">
+                    <!-- <option value="volvo">Choose Methods</option> -->
+                    <option id="linear" class="radio_box" value="linear">Linear Search</option>
+                    <option id="binary" class="radio_box" value="binary">Binary Search</option>
+                  </select>
+
+                <!-- <li><button id="linear" class="radio_box" onclick="on_method_select(this)">Linear Search</li> -->
+                <!-- <li><button id="binary" class="radio_box" onclick="on_method_select(this)">Binary Search</li> -->
+        </div>
+        <div class="dialoge_box">
+            <div class="ask_msg">is this your number?</div>
+            <div class="ask_buttons">
+                <button class="yes" onclick="reply_yes_or_no_button(this)" >Yes</button>
+                <button class="no" onclick="reply_yes_or_no_button(this)">No</button>
+            </div>
+        </div>
+        <div class="query_dialoge_box">
+            <div class="query_one">
+                <div class="ask_query_one">is this number lower?</div>
+                <div class="ask_query_buttons_one">
+                    <button class="low" onclick="reply_on_query_button(this)" >Yes</button>
+                </div>
+            </div>
+            <div class="game_end_query_btn">
+                <div class="game_query_btn">is this Your number?</div>
+                <div class="game_query_buttons_btn">
+                    <button class="win" onclick="reply_on_query_button(this)" >Yes</button>
+                </div>
+            </div>
+            <div class="query_two">
+                <div class="ask_query_two">is this number higher?</div>
+                <div class="ask_query_buttons_two">
+                    <button class="high" onclick="reply_on_query_button(this)" >Yes</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="start_btn">
+        <button onclick="start_game()">Start</button>
+    </div>
+
+    <div class="restart_button">
+        <button onclick="restart_game()"><img src="https://api.iconify.design/ic/baseline-restart-alt.svg" alt=""></button>
+    </div>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/static/js/index.js"></script>
+</html>

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body nav {
+  display: flex;
+  justify-content: center;
+}
+* body nav .nav_box {
+  position: relative;
+  width: 1000px;
+  height: 214px;
+  left: 8px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+* body nav .nav_box .nav_img {
+  display: flex;
+  justify-content: center;
+}
+* body nav .nav_box .heading {
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 102px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+* body .select_method {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+* body .select_method .method {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+* body .select_method .method .method_list {
+  width: 100%;
+}
+* body .select_method .method .method_list li {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+* body .select_method .method .method_list li input[type=radio] {
+  background-color: #fff;
+  margin: 20px;
+  font: inherit;
+  color: currentColor;
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.1em solid currentColor;
+  border-radius: 50%;
+}
+* body .select_method .method .method_list li div {
+  cursor: pointer;
+  width: 200px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 83px;
+  text-align: center;
+  color: #000000;
+}
+* body .select_method .dialoge_box {
+  position: relative;
+  width: 728px;
+  height: 343px;
+  left: 176px;
+  top: 318px;
+  border: 1px solid #000000;
+  filter: drop-shadow(40px 22px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 45px;
+}
+* body .start_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+* body .start_btn button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background: #83F18E;
+  font-size: 40px;
+  cursor: pointer;
+}
+* body .start_btn button:hover {
+  background: rgba(131, 241, 142, 0.8);
+}
