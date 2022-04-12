@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+  background-size: cover;
+  font-size: 100%;
+}
+* body .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: wrap;
+}
+* body .container .heading {
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  font-size: 5em;
+  color: rgba(0, 255, 0, 0.6);
+  text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+}
+* body .container .element_box {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: wrap;
+}
+* body .container .element_box .game_container {
+  position: relavtive;
+}
+* body .container .element_box .game_container .container_box_grid {
+  position: relative;
+  display: flex;
+  width: 576px;
+  height: 607px;
+  flex-wrap: wrap;
+  box-shadow: 0 0 50px 0 grey;
+  backdrop-filter: blur(100px);
+}
+* body .container .element_box .game_container .container_box_grid .game_over_text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 3em;
+  font-weight: bold;
+  color: green;
+  text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+}
+* body .container .element_box .game_container .container_box_grid .restart_game {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  width: 20%;
+  height: 8%;
+  background: blue;
+  border-radius: 10px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+}
+* body .container .element_box .game_container .container_box_grid .restart_game:hover {
+  background: grey;
+  color: blue;
+}
+* body .container .element_box .game_container .small_pixels {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+* body .container .element_box .game_container .small_pixel {
+  border: 1px solid transparent;
+  width: 5.2%;
+  height: 4.963%;
+}
+* body .container .element_box .game_container li {
+  list-style-type: none;
+}
+* body .container .element_box .msg_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body .container .element_box .msg_container #result {
+  position: relative;
+  font-size: 6em;
+  font-family: "Courier New", Courier, monospace;
+  color: green;
+  font-weight: bolder;
+}
+* body .container .element_box .msg_container .score {
+  position: relative;
+  font-size: 7em;
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+}
+* body .container .element_box .msg_container .img {
+  position: relative;
+  width: 20%;
+  height: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  body {
+    background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+    background-size: cover;
+    font-size: 100%;
+  }
+  body .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: wrap;
+  }
+  body .container .heading {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bolder;
+    font-size: 5em;
+    color: rgba(0, 255, 0, 0.6);
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+  }
+  body .container .element_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10%;
+    align-items: center;
+  }
+  body .container .element_box .game_container {
+    position: relavtive;
+  }
+  body .container .element_box .game_container .container_box_grid {
+    position: relative;
+    display: flex;
+    width: 576px;
+    height: 607px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 50px 0 grey;
+    backdrop-filter: blur(100px);
+  }
+  body .container .element_box .game_container .container_box_grid .game_over_text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3em;
+    font-weight: bold;
+    color: green;
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+  }
+  body .container .element_box .game_container .container_box_grid .restart_game {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    width: 20%;
+    height: 8%;
+    background: blue;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  body .container .element_box .game_container .container_box_grid .restart_game:hover {
+    background: grey;
+    color: blue;
+  }
+  body .container .element_box .game_container .small_pixels {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .container .element_box .game_container .small_pixel {
+    border: 1px solid transparent;
+    width: 5.2%;
+    height: 4.963%;
+  }
+  body .container .element_box .game_container li {
+    list-style-type: none;
+  }
+  body .container .element_box .msg_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .container .element_box .msg_container #result {
+    position: relative;
+    font-size: 6em;
+    font-family: "Courier New", Courier, monospace;
+    color: green;
+    font-weight: bolder;
+  }
+  body .container .element_box .msg_container .score {
+    position: relative;
+    font-size: 7em;
+    font-family: "Courier New", Courier, monospace;
+    color: blue;
+  }
+  body .container .element_box .msg_container .img {
+    position: relative;
+    width: 20%;
+    height: 20%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  body {
+    background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+    background-size: cover;
+    font-size: 55%;
+  }
+  body .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: wrap;
+  }
+  body .container .heading {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bolder;
+    font-size: 5em;
+    color: rgba(0, 255, 0, 0.6);
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+  }
+  body .container .element_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10%;
+    align-items: center;
+  }
+  body .container .element_box .game_container {
+    position: relavtive;
+  }
+  body .container .element_box .game_container .container_box_grid {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    width: 376px;
+    height: 407px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 50px 0 grey;
+    backdrop-filter: blur(100px);
+  }
+  body .container .element_box .game_container .container_box_grid .game_over_text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3em;
+    font-weight: bold;
+    color: green;
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+  }
+  body .container .element_box .game_container .container_box_grid .restart_game {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    width: 20%;
+    height: 8%;
+    background: blue;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  body .container .element_box .game_container .container_box_grid .restart_game:hover {
+    background: grey;
+    color: blue;
+  }
+  body .container .element_box .game_container .small_pixels {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .container .element_box .game_container .small_pixel {
+    border: 1px solid transparent;
+    width: 5.02%;
+    height: 4.9%;
+  }
+  body .container .element_box .game_container li {
+    list-style-type: none;
+  }
+  body .container .element_box .msg_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .container .element_box .msg_container #result {
+    position: relative;
+    font-size: 6em;
+    font-family: "Courier New", Courier, monospace;
+    color: green;
+    font-weight: bolder;
+  }
+  body .container .element_box .msg_container .score {
+    position: relative;
+    font-size: 7em;
+    font-family: "Courier New", Courier, monospace;
+    color: blue;
+  }
+  body .container .element_box .msg_container .img {
+    position: relative;
+    width: 20%;
+    height: 20%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  body {
+    background: whitesmoke;
+    background-size: cover;
+    font-size: 55%;
+  }
+  body .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: wrap;
+  }
+  body .container .heading {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bolder;
+    font-size: 5em;
+    color: rgba(0, 255, 0, 0.6);
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+  }
+  body .container .element_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10%;
+    align-items: center;
+  }
+  body .container .element_box .game_container {
+    position: relavtive;
+  }
+  body .container .element_box .game_container .container_box_grid {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    width: 276px;
+    height: 307px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 50px 0 grey;
+    backdrop-filter: blur(100px);
+  }
+  body .container .element_box .game_container .container_box_grid .game_over_text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3em;
+    font-weight: bold;
+    color: green;
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+  }
+  body .container .element_box .game_container .container_box_grid .restart_game {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    width: 20%;
+    height: 8%;
+    background: blue;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  body .container .element_box .game_container .container_box_grid .restart_game:hover {
+    background: grey;
+    color: blue;
+  }
+  body .container .element_box .game_container .small_pixels {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .container .element_box .game_container .small_pixel {
+    border: 1px solid transparent;
+    width: 4.82%;
+    height: 4.7%;
+  }
+  body .container .element_box .game_container li {
+    list-style-type: none;
+  }
+  body .container .element_box .msg_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  body .container .element_box .msg_container #result {
+    position: relative;
+    font-size: 6em;
+    font-family: "Courier New", Courier, monospace;
+    color: green;
+    font-weight: bolder;
+  }
+  body .container .element_box .msg_container .score {
+    position: relative;
+    font-size: 7em;
+    font-family: "Courier New", Courier, monospace;
+    color: blue;
+  }
+  body .container .element_box .msg_container .img {
+    position: relative;
+    width: 20%;
+    height: 20%;
+  }
+}

@@ -1,0 +1,19 @@
+- board [matrix || array ]
+- food 
+    - inital at random location 
+    - snake it then also goes to random location
+- snake
+    - move snake 
+        - just define node at new place or new location
+    - eat food 
+        - (add beg & rem end)if it goes left then node added to before start and removed from tail
+        - (add end & rem beg)if it goes right then node added to after tail and removed from start
+        - (add beg & rem end)if it goes up then node is added to before (start-some_position) and remove from tail
+        - (add end & rem beg)if it goes down then node is added to after (tail+some_position) and remove from start
+    -draw
+        - travers all the node of linked list and draw snake with different color
+        - draw food with different color
+    - game end 
+        - if snake head or tail touches the boundry then game ends
+        - remove array or matrix from container and put message 
+    
