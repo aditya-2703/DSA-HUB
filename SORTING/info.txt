@@ -1,0 +1,11 @@
+start 
+    -> game starts
+    -> changing heading
+    -> adding approaches
+    -> modify button content
+
+Go
+    -> call on_option_select
+        -> take approach and based on that visualize
+
+visualizer 

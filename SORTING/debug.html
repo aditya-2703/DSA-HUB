@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            border:4px solid black;
+            width: 1000px;
+            height: 700px;
+            
+        }
+        .bar_list{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            position: relative;
+            top: 680px;
+            left: -500px;
+        }
+        .bar{
+            /* position: absolute; */
+            width: 30px;
+            position: absolute;
+            transition: 0.2s all ease;
+            bottom: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="bar_list"></ul>
+    </div>
+</body>
+<script src="practice.js"></script>
+</html>
