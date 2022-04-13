@@ -3,17 +3,72 @@
     - inital at random location 
     - snake it then also goes to random location
 - snake
-    - move snake 
-        - just define node at new place or new location
-    - eat food 
-        - (add beg & rem end)if it goes left then node added to before start and removed from tail
-        - (add end & rem beg)if it goes right then node added to after tail and removed from start
-        - (add beg & rem end)if it goes up then node is added to before (start-some_position) and remove from tail
-        - (add end & rem beg)if it goes down then node is added to after (tail+some_position) and remove from start
-    -draw
-        - travers all the node of linked list and draw snake with different color
-        - draw food with different color
+   - Draw class
+        - draw the element to screen
+        - constructor - snake obj
+        - reset board
+            - clears the board by removing all the elements food and snake 
+        - draw
+            - draw the snake in some x color
+    - Controls class
+        - constructor - left
+            - left - when left arrow key pressed - call left()
+            - right - when right arrow key pressed - call right()
+            - up - when up arrow key pressed - call up()
+            - down - when down arrow key pressed - call down()
+    - Node class
+        - represent single node 
+            - data
+            - next
+    - Snake class
+        - constructor - 
+            - start - points to head of list
+            - tail - points to tail of list
+            - node - points to new node
+            - snake size - size of linked list
+        - movement 
+            - if there is only one node just move that node by reassigning the address
+        - grow snake
+            - if snake eat food (list head touches the food location) add node
+        - check snake status 
+            - update score and show to screen
+        - add beg
+            - add node to begining of list
+        - rem end
+            - remove node from end of list
+        - add end 
+            - add node to end of list
+        - rem beg 
+            - remove node from begining
+        - move left
+            - if only one node just move address(-1)
+            - else 
+                - add begining
+                - remove end
+        - move right 
+            - if only one node just move address(+1)
+            - else 
+                - add end
+                - remove beg
+        - move up 
+            - if only one node just move address(-18)
+            - else 
+                - add beg
+                - remove end
+            - check the dirrection of snake is it right or left
+        - move down
+            - if only one node just move address(+18)
+            - else 
+                - add beg
+                - remove end
+            - check the dirrection of snake is it right or left
+    - snake pos random
+        - return random position 
+    - fill food 
+        - set food to random position 
+    - Create board class 
+        - create grid of AxA size
     - game end 
-        - if snake head or tail touches the boundry then game ends
-        - remove array or matrix from container and put message 
-    
+        - perform operation on game ending
+    - is out of boundry 
+        - if player touches boundry then game end
