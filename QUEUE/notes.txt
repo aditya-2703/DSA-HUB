@@ -7,30 +7,32 @@ Mode
         - priority queue
 
 Working 
-    - Fetch Data
-        - Fetch data from api 
-    - Add Data
-        - Then add some amount of data to display
-        - As well as in local storage
-            - Data
-                - id (num)
-                - name (str)
-                - artist name (str)
-                - priority (num)
-                - isplaying (boolean)
-                - image(artist)
-    - Collect Data
-        - Collect this data from localstorage 
-        - Show in playlist html file 
-    - Modify Data
-        - increase prio
-            - Get all data from localstorage
-            - change priority
-            - overwrite all data in localstorage
-        - add to list
-            - Get all data from localstorage
-            - Add item
-            - overwrite all data in localstorage
-    - Show Data
-        - Get all data from localstorage
-        - write the values saved in localstorage
+    - show to screen 
+        - take array of object and show it to the screen 
+        - Data
+            - id (num)
+            - name (str)
+            - artist name (str)
+            - priority (num)
+            - path (song path)
+            - image(artist)
+            - time(song time)
+    - on mode select
+        - normal 
+            - play songs(favorite or album) in simple fifo manner
+        - circular 
+            - play song(favorite or album) in circular manner
+        - priority 
+            - play song(favorite or album) in priority manner using heap
+    - set next song / set prev song
+        - find the mode take action acc to that 
+    - add to priority 
+        - take that object by id and change it's priority
+    - add to favorite
+        - take that song check is not duplicate and add to favorite list
+    - set current song
+        - set current song to screen
+    - show favorite / show album
+        - show entire list of obj to screen
+    - volume change 
+        - volume change acc to onchange slider
