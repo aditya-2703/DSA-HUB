@@ -1,0 +1,39 @@
+Searching - Number Guessing
+
+methods 
+    - linear Searching
+    - binary Searching
+
+start game 
+    - starts game acc to your method
+Basic game functions class
+    - constructor
+        - binary search object
+        - steps
+    - remove extra
+        - remove unneccesory things
+    - add options list 
+        - add dialogboxes
+    - remove options list
+        - remove dialogboxes
+    - on method select 
+        - set method acc to user
+    - setting main number
+        - this method set number acc to methods linear(0) binary(50)
+    -start game 
+        - when game starts 
+            - remove extra()
+            - add options list()
+            - setting main number()
+    - game end 
+        - when we guess the number 
+        - show to screen the msg and steps which we taken to guess
+    - query 
+        - linear 
+            - is your number less then curr number ? if yess (-1)
+            - is this your number ? game end()
+            - is your number greater then curr number ? if yess (+1)
+        - binary
+            - is your number less then curr number ? if yess (end = mid-1)
+            - is this your number ? game end()
+            - is your number greater then curr number ? if yess (start=mid+1)
