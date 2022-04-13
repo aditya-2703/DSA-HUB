@@ -1,11 +1,48 @@
-start 
-    -> game starts
-    -> changing heading
-    -> adding approaches
-    -> modify button content
+Sorting - Sorting Visualizer
 
-Go
-    -> call on_option_select
-        -> take approach and based on that visualize
-
-visualizer 
+    methods
+        - bubble sort
+        - selection sort
+        - insertion sort
+        - shell sort
+        - quick sort
+        - merge sort
+    
+    set algo 
+        - set algo acc to user's selection
+    game start 
+        - remove unneccesory things from screen
+    clear canvas
+        - clear the canvas by removing items from it
+    set algo heading 
+        - set the heading based on method user selects
+    reset bars
+        - remove all bars from screen
+    make bars
+        - make bars to screen by taking size as parameter
+    draw bars
+        - display that bars which you build to screen
+    go 
+        - when user start the game
+        - clear canvas()
+        - set algo heading()
+        - make bars()
+    clean array
+        - set array to perticular parameter
+    change color 
+        - changes color of that element 
+    set time 
+        - event which is trigger when user change the slider 
+    set size    
+        - event which is trigger when user change the size of bars
+    set array color
+        - set the colors of array
+    randomize bars
+        - reset bars and make new bars
+    different sorting algo
+        - take the bars
+        - sort with time sleep and color change
+    start Visualizer
+        - clean array()
+        - diable sliders()
+        - turn on Visualizer acc to sorting algo
