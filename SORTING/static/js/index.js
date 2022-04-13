@@ -1,8 +1,3 @@
-
-// mergesort is not done yet
-// some imperfection in bubble sort
-// bars is overflow
-
 var algo = "Bubble sort"
 var array = []
 
