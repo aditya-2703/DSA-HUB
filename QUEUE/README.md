@@ -1,7 +1,7 @@
 # Queue - Music Queue
 
 <p align="center">
-  <img src="poster.png">
+  <img src="3.png">
 </p>
 
 In this project i build music player with help of queue data structure and as feature i provide different type of queue like circular queue, priority queue and normal queue.
