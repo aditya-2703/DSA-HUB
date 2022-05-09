@@ -1,7 +1,7 @@
 # Recursion and Backtracking - Suduko Solver
 
 <p align="center">
-  <img src="poster.png">
+  <img src="11.png">
 </p>
 
 
