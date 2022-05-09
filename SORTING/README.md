@@ -1,7 +1,7 @@
 # Sorting - Sorting Visualizer
 
 <p align="center">
-  <img src="poster.png">
+  <img src="10.png">
 </p>
 
 
