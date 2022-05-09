@@ -1,7 +1,7 @@
 # Stack - Card Stack
 
 <p align="center">
-  <img src="poster.png">
+  <img src="2.png">
 </p>
 
 
