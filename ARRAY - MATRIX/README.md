@@ -1,7 +1,7 @@
 # Array - 2048
 
 <p align="center">
-  <img src="poster.png">
+  <img src="1.png">
 </p>
 
 
