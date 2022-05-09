@@ -1,7 +1,7 @@
 # Bit Manipulation - Bit Calculator
 
 <p align="center">
-  <img src="poster.png">
+  <img src="8.png">
 </p>
 
 
