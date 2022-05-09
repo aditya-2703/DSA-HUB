@@ -1,7 +1,7 @@
 # Linked List - Snake Game
 
 <p align="center">
-  <img src="poster.png">
+  <img src="4.png">
 </p>
 
 
