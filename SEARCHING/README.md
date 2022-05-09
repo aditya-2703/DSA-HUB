@@ -1,7 +1,7 @@
 # Searching - Number Guessing
 
 <p align="center">
-  <img src="poster.png">
+  <img src="9.png">
 </p>
 
 
