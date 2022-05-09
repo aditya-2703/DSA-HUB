@@ -90,7 +90,7 @@ Because this is websites so you don't need to install anything but for css you h
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Usage of this project is to know how you can use this problem solvin skills in productions and developments. If you also have any idea contribute here.
+Usage of this project is to know how you can use this problem solving skills in productions and developments. If you also have any idea contribute here.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
