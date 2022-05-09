@@ -1,7 +1,7 @@
 # String - Typing Game
 
 <p align="center">
-  <img src="poster.png">
+  <img src="5.png">
 </p>
 
 
