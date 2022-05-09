@@ -124,7 +124,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [Aditya Chauhan](https://www.linkedin.com/in/aditya-2703) - adityachauhan2703@gmail.com
+Name - [Aditya Chauhan](https://www.linkedin.com/in/aditya-2703) - adityachauhan2703@gmail.com
 
 Project Link: [https://github.com/aditya-2703/DSA-HUB](https://github.com/aditya-2703/DSA-HUB)
 
