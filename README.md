@@ -1,6 +1,6 @@
 # DSA-HUB
 
-link -> [https://wwww.dsa-hub.ml/](https://wwww.dsa-hub.ml/)
+## link -> [https://www.dsa-hub.ml/](https://www.dsa-hub.ml/)
 
 <p align="center">
   <img src="bg.png">
