@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encoder</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container_1">
+            <div class="heading">
+                <div class="big_heading">File Encoder</div>
+                <div class="small_heading">Encode files online without losing any data.</div>
+            </div>
+        </div>
+        <div class="container_2">
+            <div class="encode_container">
+                <div class="encode_size_text">Size : 0.0kb</div>
+                <textarea type="text" class="encode"></textarea>
+            </div>
+            <img src="image.png" alt="">
+            <div class="decode_container">
+                <div class="decode_size_text">Size : 0.0kb</div>
+                <textarea type="text" class="decode"></textarea>
+            </div>
+        </div>
+        <div class="container_3">
+            <div class="button_list">
+                    <button class="encode_btn" onclick="encoding()">Encode</button>
+                    <button class="decode_btn" onclick="decoding()">Decode</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/static/js/prio.js"></script>
+<script src="/static/js/file_compressor.js"></script>
+<!-- <script type="module" src="/static/js/index.js"></script> -->
+
+</html>
