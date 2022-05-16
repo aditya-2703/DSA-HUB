@@ -34,7 +34,7 @@ class Huffman
         - text - given string as input
         - heap - used for algorithm
         - code - maping of code with character
-        - char_list - maping of character with it's frequency
+        - char_list - maping of character with its frequency
         - reverse_code - reverse maping of code for decoding purpose
     -> make_char_freq
         - creating maping of char with freq
