@@ -1,7 +1,7 @@
 # Greedy - File Encoder
 
 <p align="center">
-  <img src="1.png">
+  <img src="6.png">
 </p>
 
 
