@@ -1,0 +1,57 @@
+Trie - Contact Diary
+
+data
+    - list of objects 
+    - object = {name:"name",phone="xxxxyyyyzz"}
+
+class Trie_node
+    -> constructor()
+        - data - data of curr Trie_node
+        - child - 26 len of array
+        - is_end - boolean which make sure that this is end of string
+        - phone_num - phone number with this data
+
+class Trie  
+    -> constructor()
+        - initialize root Trie_node
+    
+    -> insert_word()
+        - insert word in to Trie
+
+    -> search_word()
+        - search word in to Trie
+    
+    -> get_node()
+        - get node from word
+
+    -> fill_suggestions()
+        - fill the suggestions in one array and return 
+    
+    -> get_all_suggestions()
+        - take node from word
+        - fill the object with suggestions and return  
+    
+    -> fill_sorted_order()
+        - fill the object with sorted entry and return  
+
+    -> get_sorted_order()
+        - take root
+        - fill the objects and return the list of object with sorted order
+    
+-> get_phone_number()
+    - generates the random number
+
+-> get_data_obj()
+    - create data obj from list of names
+
+-> template()
+    - template for display list of object to screen
+
+-> show_data()
+    - to show data in sorted order
+
+-> add_data()
+    - when user press add button data added to trie
+
+-> search_data()
+    - when user search the data then it takes all suggestions and display it into screen

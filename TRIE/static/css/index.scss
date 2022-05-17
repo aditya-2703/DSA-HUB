@@ -1,0 +1,1793 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Actor&family=Aldrich&family=Enriqueta:wght@400;500;600;700&family=Faustina:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;800;900&family=Red+Rose:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Actor&family=Aldrich&family=Enriqueta:wght@400;500;600;700&family=Faustina:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Red+Rose:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap');
+$base-color: #8A3FFC;
+$colorPhone: #002133;
+
+:root {
+	--phone-color: #002133;
+	--phone-notch: block;
+	--phone-border: 4px;
+	--phone-radius: 30px;
+	--phone-height: 2280px;
+	--phone-width: 1080px;
+	--phone-scale: 1;
+	--phone-x: 0;
+	--phone-y: 0;
+
+	--bg-color: #EFEFEF;
+	--notch-height: 14px;
+	--notch-width: 38%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    body{
+        font-size: 100%;
+        width: 100vw;
+        height: 100vh;
+        background: #F0F0F3;
+        border-radius: 5px;
+        overflow:hidden;
+
+        .main_cont{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // background: rgba(0,255,0,0.4);
+
+            .heading{
+                position: relative;
+                height: 10%;
+                top: 10px;
+                // border: 2px solid black;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4em;
+                line-height: 82px;
+                color: #728AB7;        
+                text-align: center;    
+            }
+            .container{
+                width: 100%;
+                height: 90%;
+                // height: 100%;
+                // border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                // flex-wrap: wrap-reverse;
+    
+                .inner_container_1{
+                    position: relative;
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    // background: blue;
+                    // border: 1px solid blue;
+                    // background: rgba(255,0,0,0.4);
+    
+                    .function_container{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 70%;
+                        height: 60%;
+                        left: 229px;
+                        top: 442px;
+                        
+                        // background: #FFFFFF;
+                        // box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                        border-radius: 5px;                    
+                        .search_container{
+                            width: 100%;
+                            height: 20%;
+                            background: #8A3FFC;
+                            // border: 1px solid #FFFBFB;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_search_container{
+                                background: #FFFFFF;
+                                // border: 1px solid #FFFBFB;
+                                border-radius: 5px;
+                                width: 97%;
+                                height: 80%;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                img{
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 100%;
+                                    margin-left: 10px;
+                                }
+                                .search_bar{
+                                    border: none;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 1.5em;
+                                    font-family: 'Rubik', sans-serif;
+                                    padding-left: 40px;
+                                }
+                                .search_bar:focus ,.search_bar:active{
+                                    background-color: white;
+                                }
+                            }
+                        }
+                        .button_container{
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            margin-top: 20px;
+                            background: #FFFFFF;
+                            box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_button_container{
+                                width: 100%;
+                                // height: 100%;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                .input_field_container{
+                                    width: 90%;
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    // background: rgba(255, 255, 0, 0.2);                                
+                                    font-family: 'Inter', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 1.5em;
+                                    line-height: 41px;                                
+                                    color: $base-color;
+                                    .input_box{
+                                        position: relative;
+                                        width: 90%;
+                                        height: 50px;
+                                        background: rgba(147, 147, 147, 0.17);
+                                        border: 1px solid #FFFFFF;
+                                        border-radius: 14px;       
+                                        font-family: 'Rubik', sans-serif;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 1em;
+                                        padding-left: 10px;
+                        
+                                    }                                
+    
+                                }
+                                .add_button{
+                                    position: relative;
+                                    top: 20px;
+                                    width:  120px;
+                                    height: 50px;
+                                    background: #8A3FFC;
+    
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 2em;
+                                    line-height: 71px;
+                                    
+                                    color: #FFFFFF;                                
+                                    border: 1px solid #FFFBFB;
+                                    border-radius: 5px;                                
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+    
+                                }
+                            }
+                        }
+                    }
+                }
+                .inner_container_2{
+                    position: relative;
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // background: rgba(0,255,0,0.4);
+                    img{
+                        position: absolute;
+                        z-index: -1;
+                    }
+                    .mobile_mockup{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 1;
+                        // background: #000;
+                        .settings {
+                            background-color: white;
+                            padding: 40px;
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            box-sizing: border-box;
+                            position: relative;
+                            z-index: 1;
+                            width: 300px;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                        
+                            input[type=number] {
+                                width: 60px;
+                            }
+                        }
+                        
+                        
+                        .obj {
+                            // cursor: all-scroll;
+                            position: relative;
+                        }
+                        
+                        .mobile {
+                            height: calc(var(--phone-height) * 1/4);
+                            width: calc(var(--phone-width) * 1/4);
+                            transform: scale(var(--phone-scale));
+                            padding: var(--phone-border);
+                            background-color: var(--phone-color);
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            border-radius: var(--phone-radius);
+                        }
+                        
+                        .mobile-in {
+                            position: relative;
+                        }
+                        
+                        .button {
+                            position: absolute;
+                            height: 6%;
+                            width: 2px;
+                            background-color: var(--phone-color);
+                            top: 20%;
+                        
+                            &.button-right {
+                                right: -2px;
+                                border-radius: 0 2px 2px 0;
+                            }
+                        
+                            &.button-large {
+                                height: 8%;
+                            }
+                        
+                            &.button-left {
+                                left: -2px;
+                                border-radius: 2px 0 0 2px;
+                            }
+                        
+                            &.button-down {
+                                top: 28%;
+                            }
+                        }
+                        
+                        
+                        .mobile-in {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+                            width: 100%;
+                            overflow: hidden;
+                            border-radius: calc(var(--phone-radius) - var(--phone-border));
+                            
+                            .status-bar {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: calc(var(--notch-height));
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        
+                            .notch {
+                                width: var(--notch-width);
+                                height: 100%;
+                                background-color: var(--phone-color);
+                                border-radius: 0 0 30px 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 1;
+                        
+                                .audio {
+                                    flex-grow: 1;
+                                    height: 20%;
+                                    max-width: 40%;
+                                    margin-right: 5%;
+                                    border-radius: 20%;
+                                    box-shadow: inset 0 0 2px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                        
+                                .camera {
+                                    margin-left: 5%;
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 100%;
+                                    box-shadow: inset 0 0 6px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                            }
+                            
+                            .screen {
+                                height: 100%;
+                                width: 100%;
+                                background-color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                padding-top: 20px;
+                                overflow-y: scroll;
+                                
+                                
+                                .phone_heading{
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 1.5em;
+                                    // line-height: 38px;
+                                    // background: rgba(255,0,255,0.4);
+                                    /* identical to box height */
+                                    text-align: center;
+                                    
+                                    color: #000000;                                    
+                                }                        
+                                .contact_list_container{
+                                    position: relative;
+                                    top: 40px;
+                                    // background: rgba(255,0,0,0.4);
+                                    width: 100%;
+                                    height: 100%;
+                                    .contact_box{
+                                        position: relative;
+                                        // background: rgba(255,255,0,0.4);
+                                        width: 100%;
+                                        height: 10%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: row;
+                                        .dp{
+                                            position:relative;
+                                            width: 20%;
+                                            height: 100%;
+                                            // background: rgba(255,255,255,0.4);
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            .dp_inner_1{
+                                                position: relative;
+                                                width:  90%;
+                                                height: 90%;
+                                                background: #000;
+                                                border-radius: 50%;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                .dp_inner_2{
+                                                    position: relative;
+                                                    width:  95%;
+                                                    height: 95%;
+                                                    background: #fff;
+                                                    border-radius: 50%;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    img{
+                                                        width:  90%;
+                                                        height: 90%;
+                                                        border-radius: 50%;
+                                                        object-fit: cover;
+                                                        z-index: 1;
+                                                    }
+                                                }
+                                            }
+                                        }       
+                                        .info{
+                                            position:relative;
+                                            width: 70%;
+                                            height: 100%;
+                                            left: 10px;
+                                            // background: rgba(255,25,122,0.4);
+                                            .info_name{
+                                                position: relative;
+                                                font-family: 'Inter';
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 1em;
+                                                line-height: 20px;
+                                                
+                                                color: #000000;                                                
+                                            }
+                                            .info_phone{
+                                                font-family: 'Inter';
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 0.8em;
+                                                
+                                                color: #919191;                                                
+                                            }
+                                        }
+                                    }
+                                }       
+
+                            }
+                            
+                            .scren{
+                                -ms-overflow-style: none;  /* IE and Edge */
+                                scrollbar-width: none;                              
+                            }
+                            .screen::-webkit-scrollbar {
+                                display: none;
+                            }                            
+                        }
+                        
+                        
+                        
+                        .app-cont {
+                            height: 100%;
+                            width: 100%;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    body{
+        font-size: 75%;
+        width: 100vw;
+        height: 100vh;
+        background: #F0F0F3;
+        border-radius: 5px;
+        overflow-y:scroll;
+
+        .main_cont{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // background: rgba(0,255,0,0.4);
+
+            .heading{
+                position: relative;
+                height: 10%;
+                // border: 2px solid black;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4em;
+                line-height: 82px;
+                color: #728AB7;        
+                text-align: center;    
+                margin-bottom: 120px;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+                // height: 100%;
+                // border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // flex-wrap: wrap-reverse;
+    
+                .inner_container_1{
+                    display: flex;
+                    position: relative;
+                    top: 100px;
+                    order: 2;
+                    width: 100%;
+                    height: 100vh;
+                    justify-content: flex-end;
+                    align-items: center;
+                    // background: blue;
+                    // border: 1px solid blue;
+                    // background: rgba(255,0,0,0.4);
+    
+                    .function_container{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        
+                        // background: #FFFFFF;
+                        // box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                        border-radius: 5px;                    
+                        .search_container{
+                            width: 80%;
+                            height: 70px;
+                            background: #8A3FFC;
+                            // border: 1px solid #FFFBFB;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_search_container{
+                                background: #FFFFFF;
+    
+                                // border: 1px solid #FFFBFB;
+                                border-radius: 5px;
+                                width: 97%;
+                                height: 80%;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                img{
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 100%;
+                                    margin-left: 10px;
+                                }
+                                .search_bar{
+                                    border: none;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 1.5em;
+                                    font-family: 'Rubik', sans-serif;
+                                    padding-left: 40px;
+                                }
+                                .search_bar:focus ,.search_bar:active{
+                                    background-color: white;
+                                }
+                            }
+                        }
+                        .button_container{
+
+                            display: flex;
+                            position: relative;
+                            width: 80%;
+                            height: 100%;
+                            // margin-top: 20px;
+                            background: #FFFFFF;
+                            box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                            border-radius: 5px;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_button_container{
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                .input_field_container{
+                                    width: 90%;
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    // background: rgba(255, 255, 0, 0.2);                                
+                                    font-family: 'Inter', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 1.5em;
+                                    line-height: 41px;                                
+                                    color: $base-color;
+                                    .input_box{
+                                        position: relative;
+                                        width: 90%;
+                                        height: 50px;
+                                        background: rgba(147, 147, 147, 0.17);
+                                        border: 1px solid #FFFFFF;
+                                        border-radius: 14px;                                    
+                                    }                                
+    
+                                }
+                                .add_button{
+                                    position: relative;
+                                    // top: 20px;
+                                    width:  120px;
+                                    height: 50px;
+                                    background: #8A3FFC;
+    
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 2em;
+                                    line-height: 71px;
+                                    
+                                    color: #FFFFFF;                                
+                                    border: 1px solid #FFFBFB;
+                                    border-radius: 5px;                                
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+    
+                                }
+                            }
+                        }
+                    }
+                }
+                .inner_container_2{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    // background: rgba(0,255,0,0.4);
+                    img{
+                        position: absolute;
+                        z-index: -1;
+                    }
+                    .mobile_mockup{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 1;
+                        // background: #000;
+                        .settings {
+                            background-color: white;
+                            padding: 40px;
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            box-sizing: border-box;
+                            position: relative;
+                            z-index: 1;
+                            width: 300px;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                        
+                            input[type=number] {
+                                width: 60px;
+                            }
+                        }
+                        
+                        
+                        .obj {
+                            // cursor: all-scroll;
+                            position: relative;
+                        }
+                        
+                        .mobile {
+                            height: calc(var(--phone-height) * 1/4);
+                            width: calc(var(--phone-width) * 1/4);
+                            transform: scale(var(--phone-scale));
+                            padding: var(--phone-border);
+                            background-color: var(--phone-color);
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            border-radius: var(--phone-radius);
+                        }
+                        
+                        .mobile-in {
+                            position: relative;
+                        }
+                        
+                        .button {
+                            position: absolute;
+                            height: 6%;
+                            width: 2px;
+                            background-color: var(--phone-color);
+                            top: 20%;
+                        
+                            &.button-right {
+                                right: -2px;
+                                border-radius: 0 2px 2px 0;
+                            }
+                        
+                            &.button-large {
+                                height: 8%;
+                            }
+                        
+                            &.button-left {
+                                left: -2px;
+                                border-radius: 2px 0 0 2px;
+                            }
+                        
+                            &.button-down {
+                                top: 28%;
+                            }
+                        }
+                        
+                        
+                        .mobile-in {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+                            width: 100%;
+                            overflow: hidden;
+                            border-radius: calc(var(--phone-radius) - var(--phone-border));
+                            
+                            .status-bar {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: calc(var(--notch-height));
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        
+                            .notch {
+                                width: var(--notch-width);
+                                height: 100%;
+                                background-color: var(--phone-color);
+                                border-radius: 0 0 30px 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 1;
+                        
+                                .audio {
+                                    flex-grow: 1;
+                                    height: 20%;
+                                    max-width: 40%;
+                                    margin-right: 5%;
+                                    border-radius: 20%;
+                                    box-shadow: inset 0 0 2px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                        
+                                .camera {
+                                    margin-left: 5%;
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 100%;
+                                    box-shadow: inset 0 0 6px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                            }
+                        
+                            .screen {
+                                height: 100%;
+                                width: 100%;
+                                background-color: white;
+                            }
+                        
+                            
+                        }
+                        
+                        
+                        
+                        .app-cont {
+                            height: 100%;
+                            width: 100%;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    body{
+        font-size: 75%;
+        width: 100vw;
+        height: 100vh;
+        background: #F0F0F3;
+        border-radius: 5px;
+        overflow-y:scroll;
+
+        .main_cont{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // background: rgba(0,255,0,0.4);
+
+            .heading{
+                position: relative;
+                height: 10%;
+                // border: 2px solid black;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4em;
+                line-height: 82px;
+                color: #728AB7;        
+                text-align: center;    
+                margin-bottom: 120px;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+                // height: 100%;
+                // border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // flex-wrap: wrap-reverse;
+    
+                .inner_container_1{
+                    display: flex;
+                    position: relative;
+                    top: 100px;
+                    order: 2;
+                    width: 100%;
+                    height: 100vh;
+                    justify-content: flex-end;
+                    align-items: center;
+                    // background: blue;
+                    // border: 1px solid blue;
+                    // background: rgba(255,0,0,0.4);
+    
+                    .function_container{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        
+                        // background: #FFFFFF;
+                        // box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                        border-radius: 5px;                    
+                        .search_container{
+                            width: 80%;
+                            height: 70px;
+                            background: #8A3FFC;
+                            // border: 1px solid #FFFBFB;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_search_container{
+                                background: #FFFFFF;
+    
+                                // border: 1px solid #FFFBFB;
+                                border-radius: 5px;
+                                width: 97%;
+                                height: 80%;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                img{
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 100%;
+                                    margin-left: 10px;
+                                }
+                                .search_bar{
+                                    border: none;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 1.5em;
+                                    font-family: 'Rubik', sans-serif;
+                                    padding-left: 40px;
+                                }
+                                .search_bar:focus ,.search_bar:active{
+                                    background-color: white;
+                                }
+                            }
+                        }
+                        .button_container{
+
+                            display: flex;
+                            position: relative;
+                            width: 80%;
+                            height: 100%;
+                            // margin-top: 20px;
+                            background: #FFFFFF;
+                            box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                            border-radius: 5px;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_button_container{
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                .input_field_container{
+                                    width: 90%;
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    // background: rgba(255, 255, 0, 0.2);                                
+                                    font-family: 'Inter', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 1.5em;
+                                    line-height: 41px;                                
+                                    color: $base-color;
+                                    .input_box{
+                                        position: relative;
+                                        width: 90%;
+                                        height: 50px;
+                                        background: rgba(147, 147, 147, 0.17);
+                                        border: 1px solid #FFFFFF;
+                                        border-radius: 14px;                                    
+                                    }                                
+    
+                                }
+                                .add_button{
+                                    position: relative;
+                                    // top: 20px;
+                                    width:  120px;
+                                    height: 50px;
+                                    background: #8A3FFC;
+    
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 2em;
+                                    line-height: 71px;
+                                    
+                                    color: #FFFFFF;                                
+                                    border: 1px solid #FFFBFB;
+                                    border-radius: 5px;                                
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .inner_container_2{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    // background: rgba(0,255,0,0.4);
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: -1;
+                    }
+                    .mobile_mockup{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 1;
+                        // background: #000;
+                        .settings {
+                            background-color: white;
+                            padding: 40px;
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            box-sizing: border-box;
+                            position: relative;
+                            z-index: 1;
+                            width: 300px;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                        
+                            input[type=number] {
+                                width: 60px;
+                            }
+                        }
+                        
+                        
+                        .obj {
+                            // cursor: all-scroll;
+                            position: relative;
+                        }
+                        
+                        .mobile {
+                            height: calc(var(--phone-height) * 1/4);
+                            width: calc(var(--phone-width) * 1/4);
+                            transform: scale(var(--phone-scale));
+                            padding: var(--phone-border);
+                            background-color: var(--phone-color);
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            border-radius: var(--phone-radius);
+                        }
+                        
+                        .mobile-in {
+                            position: relative;
+                        }
+                        
+                        .button {
+                            position: absolute;
+                            height: 6%;
+                            width: 2px;
+                            background-color: var(--phone-color);
+                            top: 20%;
+                        
+                            &.button-right {
+                                right: -2px;
+                                border-radius: 0 2px 2px 0;
+                            }
+                        
+                            &.button-large {
+                                height: 8%;
+                            }
+                        
+                            &.button-left {
+                                left: -2px;
+                                border-radius: 2px 0 0 2px;
+                            }
+                        
+                            &.button-down {
+                                top: 28%;
+                            }
+                        }
+                        
+                        
+                        .mobile-in {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+                            width: 100%;
+                            overflow: hidden;
+                            border-radius: calc(var(--phone-radius) - var(--phone-border));
+                            
+                            .status-bar {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: calc(var(--notch-height));
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        
+                            .notch {
+                                width: var(--notch-width);
+                                height: 100%;
+                                background-color: var(--phone-color);
+                                border-radius: 0 0 30px 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 1;
+                        
+                                .audio {
+                                    flex-grow: 1;
+                                    height: 20%;
+                                    max-width: 40%;
+                                    margin-right: 5%;
+                                    border-radius: 20%;
+                                    box-shadow: inset 0 0 2px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                        
+                                .camera {
+                                    margin-left: 5%;
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 100%;
+                                    box-shadow: inset 0 0 6px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                            }
+                        
+                            .screen {
+                                height: 100%;
+                                width: 100%;
+                                background-color: white;
+                            }
+                        
+                            
+                        }
+                        
+                        
+                        
+                        .app-cont {
+                            height: 100%;
+                            width: 100%;
+                        }                        
+                    }
+                }
+            }
+        }
+    }    
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    body{
+        font-size: 55%;
+        width: 100vw;
+        height: 100vh;
+        background: #F0F0F3;
+        border-radius: 5px;
+        overflow-y:scroll;
+
+        .main_cont{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // background: rgba(0,255,0,0.4);
+
+            .heading{
+                position: relative;
+                height: 10%;
+                // border: 2px solid black;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4em;
+                line-height: 82px;
+                color: #728AB7;        
+                text-align: center;    
+                margin-bottom: 120px;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+                // height: 100%;
+                // border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // flex-wrap: wrap-reverse;
+    
+                .inner_container_1{
+                    display: flex;
+                    position: relative;
+                    top: 100px;
+                    order: 2;
+                    width: 100%;
+                    height: 100vh;
+                    justify-content: flex-end;
+                    align-items: center;
+                    // background: blue;
+                    // border: 1px solid blue;
+                    // background: rgba(255,0,0,0.4);
+    
+                    .function_container{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        
+                        // background: #FFFFFF;
+                        // box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                        border-radius: 5px;                    
+                        .search_container{
+                            width: 80%;
+                            height: 70px;
+                            background: #8A3FFC;
+                            // border: 1px solid #FFFBFB;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_search_container{
+                                background: #FFFFFF;
+    
+                                // border: 1px solid #FFFBFB;
+                                border-radius: 5px;
+                                width: 97%;
+                                height: 80%;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                img{
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 100%;
+                                    margin-left: 10px;
+                                }
+                                .search_bar{
+                                    border: none;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 1.5em;
+                                    font-family: 'Rubik', sans-serif;
+                                    padding-left: 40px;
+                                }
+                                .search_bar:focus ,.search_bar:active{
+                                    background-color: white;
+                                }
+                            }
+                        }
+                        .button_container{
+
+                            display: flex;
+                            position: relative;
+                            width: 80%;
+                            height: 100%;
+                            // margin-top: 20px;
+                            background: #FFFFFF;
+                            box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                            border-radius: 5px;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_button_container{
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                .input_field_container{
+                                    width: 90%;
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    // background: rgba(255, 255, 0, 0.2);                                
+                                    font-family: 'Inter', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 1.5em;
+                                    line-height: 41px;                                
+                                    color: $base-color;
+                                    .input_box{
+                                        position: relative;
+                                        width: 90%;
+                                        height: 50px;
+                                        background: rgba(147, 147, 147, 0.17);
+                                        border: 1px solid #FFFFFF;
+                                        border-radius: 14px;                                    
+                                    }                                
+    
+                                }
+                                .add_button{
+                                    position: relative;
+                                    // top: 20px;
+                                    width:  120px;
+                                    height: 50px;
+                                    background: #8A3FFC;
+    
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 2em;
+                                    line-height: 71px;
+                                    
+                                    color: #FFFFFF;                                
+                                    border: 1px solid #FFFBFB;
+                                    border-radius: 5px;                                
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .inner_container_2{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    // background: rgba(0,255,0,0.4);
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: -1;
+                    }
+                    .mobile_mockup{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 1;
+                        // background: #000;
+                        .settings {
+                            background-color: white;
+                            padding: 40px;
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            box-sizing: border-box;
+                            position: relative;
+                            z-index: 1;
+                            width: 300px;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                        
+                            input[type=number] {
+                                width: 60px;
+                            }
+                        }
+                        
+                        
+                        .obj {
+                            // cursor: all-scroll;
+                            position: relative;
+                        }
+                        
+                        .mobile {
+                            height: calc(var(--phone-height) * 1/4);
+                            width: calc(var(--phone-width) * 1/4);
+                            transform: scale(var(--phone-scale));
+                            padding: var(--phone-border);
+                            background-color: var(--phone-color);
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            border-radius: var(--phone-radius);
+                        }
+                        
+                        .mobile-in {
+                            position: relative;
+                        }
+                        
+                        .button {
+                            position: absolute;
+                            height: 6%;
+                            width: 2px;
+                            background-color: var(--phone-color);
+                            top: 20%;
+                        
+                            &.button-right {
+                                right: -2px;
+                                border-radius: 0 2px 2px 0;
+                            }
+                        
+                            &.button-large {
+                                height: 8%;
+                            }
+                        
+                            &.button-left {
+                                left: -2px;
+                                border-radius: 2px 0 0 2px;
+                            }
+                        
+                            &.button-down {
+                                top: 28%;
+                            }
+                        }
+                        
+                        
+                        .mobile-in {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+                            width: 100%;
+                            overflow: hidden;
+                            border-radius: calc(var(--phone-radius) - var(--phone-border));
+                            
+                            .status-bar {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: calc(var(--notch-height));
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        
+                            .notch {
+                                width: var(--notch-width);
+                                height: 100%;
+                                background-color: var(--phone-color);
+                                border-radius: 0 0 30px 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 1;
+                        
+                                .audio {
+                                    flex-grow: 1;
+                                    height: 20%;
+                                    max-width: 40%;
+                                    margin-right: 5%;
+                                    border-radius: 20%;
+                                    box-shadow: inset 0 0 2px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                        
+                                .camera {
+                                    margin-left: 5%;
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 100%;
+                                    box-shadow: inset 0 0 6px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                            }
+                        
+                            .screen {
+                                height: 100%;
+                                width: 100%;
+                                background-color: white;
+                            }
+                        
+                            
+                        }
+                        
+                        
+                        
+                        .app-cont {
+                            height: 100%;
+                            width: 100%;
+                        }                        
+                    }
+                }
+            }
+        }
+    }       
+}
+@media only screen and (min-width:100px) and (max-width: 325px){
+	/*Small smartphones [325px -> 425px]*/
+    body{
+        font-size: 45%;
+        width: 100vw;
+        height: 100vh;
+        background: #F0F0F3;
+        border-radius: 5px;
+        overflow-y:scroll;
+
+        .main_cont{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // background: rgba(0,255,0,0.4);
+
+            .heading{
+                position: relative;
+                height: 10%;
+                // border: 2px solid black;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4em;
+                line-height: 82px;
+                color: #728AB7;        
+                text-align: center;    
+                margin-bottom: 120px;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+                // height: 100%;
+                // border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // flex-wrap: wrap-reverse;
+    
+                .inner_container_1{
+                    display: flex;
+                    position: relative;
+                    top: 100px;
+                    order: 2;
+                    width: 100%;
+                    height: 100vh;
+                    justify-content: flex-end;
+                    align-items: center;
+                    // background: blue;
+                    // border: 1px solid blue;
+                    // background: rgba(255,0,0,0.4);
+    
+                    .function_container{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        
+                        // background: #FFFFFF;
+                        // box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                        border-radius: 5px;                    
+                        .search_container{
+                            width: 90%;
+                            height: 70px;
+                            background: #8A3FFC;
+                            // border: 1px solid #FFFBFB;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_search_container{
+                                background: #FFFFFF;
+    
+                                // border: 1px solid #FFFBFB;
+                                border-radius: 5px;
+                                width: 97%;
+                                height: 80%;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                img{
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 100%;
+                                    margin-left: 10px;
+                                }
+                                .search_bar{
+                                    border: none;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 1.5em;
+                                    font-family: 'Rubik', sans-serif;
+                                    padding-left: 40px;
+                                }
+                                .search_bar:focus ,.search_bar:active{
+                                    background-color: white;
+                                }
+                            }
+                        }
+                        .button_container{
+
+                            display: flex;
+                            position: relative;
+                            width: 90%;
+                            height: 100%;
+                            // margin-top: 20px;
+                            background: #FFFFFF;
+                            box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+                            border-radius: 5px;
+                            justify-content: center;
+                            align-items: center;
+                            .inner_button_container{
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                .input_field_container{
+                                    width: 90%;
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    // background: rgba(255, 255, 0, 0.2);                                
+                                    font-family: 'Inter', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 2em;
+                                    line-height: 41px;                                
+                                    color: $base-color;
+                                    .input_box{
+                                        position: relative;
+                                        width: 95%;
+                                        height: 50px;
+                                        background: rgba(147, 147, 147, 0.17);
+                                        border: 1px solid #FFFFFF;
+                                        border-radius: 14px;                                    
+                                    }                                
+    
+                                }
+                                .add_button{
+                                    position: relative;
+                                    // top: 20px;
+                                    width:  120px;
+                                    height: 50px;
+                                    background: #8A3FFC;
+    
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 2em;
+                                    line-height: 71px;
+                                    
+                                    color: #FFFFFF;                                
+                                    border: 1px solid #FFFBFB;
+                                    border-radius: 5px;                                
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .inner_container_2{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    // background: rgba(0,255,0,0.4);
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: -1;
+                    }
+                    .mobile_mockup{
+                        position: relative;
+                        width:  100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 1;
+                        // background: #000;
+                        .settings {
+                            background-color: white;
+                            padding: 40px;
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            box-sizing: border-box;
+                            position: relative;
+                            z-index: 1;
+                            width: 300px;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                        
+                            input[type=number] {
+                                width: 60px;
+                            }
+                        }
+                        
+                        
+                        .obj {
+                            // cursor: all-scroll;
+                            position: relative;
+                        }
+                        
+                        .mobile {
+                            height: calc(var(--phone-height) * 1/5);
+                            width: calc(var(--phone-width) * 1/5);
+                            transform: scale(var(--phone-scale));
+                            padding: var(--phone-border);
+                            background-color: var(--phone-color);
+                            box-shadow: 0 0 80px rgba(0,0,0,0.5);
+                            border-radius: var(--phone-radius);
+                        }
+                        
+                        .mobile-in {
+                            position: relative;
+                        }
+                        
+                        .button {
+                            position: absolute;
+                            height: 6%;
+                            width: 2px;
+                            background-color: var(--phone-color);
+                            top: 20%;
+                        
+                            &.button-right {
+                                right: -2px;
+                                border-radius: 0 2px 2px 0;
+                            }
+                        
+                            &.button-large {
+                                height: 8%;
+                            }
+                        
+                            &.button-left {
+                                left: -2px;
+                                border-radius: 2px 0 0 2px;
+                            }
+                        
+                            &.button-down {
+                                top: 28%;
+                            }
+                        }
+                        
+                        
+                        .mobile-in {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+                            width: 100%;
+                            overflow: hidden;
+                            border-radius: calc(var(--phone-radius) - var(--phone-border));
+                            
+                            .status-bar {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: calc(var(--notch-height));
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        
+                            .notch {
+                                width: var(--notch-width);
+                                height: 100%;
+                                background-color: var(--phone-color);
+                                border-radius: 0 0 30px 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 1;
+                        
+                                .audio {
+                                    flex-grow: 1;
+                                    height: 20%;
+                                    max-width: 40%;
+                                    margin-right: 5%;
+                                    border-radius: 20%;
+                                    box-shadow: inset 0 0 2px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                        
+                                .camera {
+                                    margin-left: 5%;
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 100%;
+                                    box-shadow: inset 0 0 6px rgba(0,0,0, 0.2);
+                                    margin-bottom: calc(var(--phone-border) / 2);
+                                }
+                            }
+                        
+                            .screen {
+                                height: 100%;
+                                width: 100%;
+                                background-color: white;
+                            }
+                        
+                            
+                        }
+                        
+                        
+                        
+                        .app-cont {
+                            height: 100%;
+                            width: 100%;
+                        }                        
+                    }
+                }
+            }
+        }
+    }       
+}
