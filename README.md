@@ -43,7 +43,7 @@
 | Array - 2048  | Stack - Card Stack  | Queue - Music Queue |
 | String - Typing Game  | Linked List - Snake Game  | Bit Manipulation - Bit Calculator |
 | Searching - Number Guessing  | Sorting - Sorting Visualizer  | Backtracking - Suduko Solver |
-| Greedy - File Encoder |
+| Greedy - File Encoder | Trie - Contact - Diary
 
 Dsa-Hub is all about how you can use different data-structures and algorithms to solve reallife application and building reallife projects and games. With this idea and concept i build games and projects  based on specific data-structure and algorithm
 
@@ -112,6 +112,7 @@ The different sub-projects link is mentioned below
 * [Bit Manipulation - Bit Calculator](https://github.com/aditya-2703/DSA-HUB/tree/main/BIT-MAGIC)
 * [Backtracking - Suduko Solver](https://github.com/aditya-2703/DSA-HUB/tree/main/BACKTRACKING)
 * [Greedy - File Encoder](https://github.com/aditya-2703/DSA-HUB/tree/main/GREEDY)
+* [Trie - Contact Diary](https://github.com/aditya-2703/DSA-HUB/tree/main/TRIE)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
