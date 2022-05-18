@@ -14,7 +14,7 @@ This project is an file encoder which uses huffman encoding to encode the text. 
 
 # How to run modules
 
- * You don't need to press any button just open game and play with your keyboard with arrow keys.
+ * You just need to give text in input field and press the button according to your preference and boom it's done.
 
 # How it works
 
