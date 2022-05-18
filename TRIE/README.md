@@ -1,7 +1,7 @@
 # Trie - Contact Diary
 
 <p align="center">
-  <img src="6.png">
+  <img src="l_trie.png">
 </p>
 
 
