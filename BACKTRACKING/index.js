@@ -73,6 +73,7 @@ function start(){
     show_suduko()
     make_default()
     document.querySelector(".submit").style.display = "block"
+
 }
 
 // suduko element class which represent the object with following property
@@ -137,6 +138,7 @@ class Draw{
                 if(hashmap[i+"_"+j]==false){
                     let ele = document.getElementById(`${i}${j}`)
                     ele.innerHTML = board[i][j]
+                    ele.style.color="black"
                     await sleep(100 + 50 * i)
                 }
             }
@@ -272,6 +274,34 @@ function submit_game(){
     alert("Congratulations you win the game🎉🎉")
 }
 
+// for debug purpose
+function print_board(board){
+    for(let i=0;i<n;i++){
+        let string = ""
+        for(let j=0;j<n;j++){
+            string+=board[i][j]+" "
+        }
+        console.log(string)
+    }
+}
+
+// this function removes the user input numbers so that it not affect the original suduko board
+function remove_extra_filing_numbers(){
+    print_board(board)
+    // hashmap row_col
+    for(let i=0;i<n;i++){
+        for(let j=0;j<n;j++){
+            if(hashmap[i+"_"+j]==false){
+                board[i][j] = 0
+            }
+             
+        }
+    }
+    console.log("-------------------------------------")
+    print_board(board)
+
+}
+
 // this class takes suduko it's size and grid size and return solved suduko
 class Sudoku_solver{
     constructor(board,n,box_size){
@@ -354,6 +384,8 @@ class Sudoku_solver{
 }
 // this function called when user clicks get solution button
 function get_solution(){
+    remove_extra_filing_numbers()
+    draw_obj.fill_for_solution(board)
     let suduko_board_deep_copy = JSON.parse(JSON.stringify(board))
     let suduko_solver = new Sudoku_solver(suduko_board_deep_copy,n,box_n)
     suduko_solver.solve()
