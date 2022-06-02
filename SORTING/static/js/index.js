@@ -1,57 +1,24 @@
-var algo = "Bubble sort"
+
+
+var algo = "bubble"
 var array = []
 
-let set_algo = ()=>{
-    let algos = document.getElementById("algo")
-    algo = algos.options[algos.selectedIndex].text
-    console.log(algo)
-}
-let add_selection_option_button = ()=>{
-    let parent= document.querySelector(".heading")
-    let new_element = document.createElement("div")
-    new_element.classList.add("selection_option_button")
-    new_element.innerHTML = `<select onchange="set_algo()" name="approaches" id="algo">
-    <optgroup label="Comparision">
-        <option value="Bubble sort">Bubble sort</option>
-        <option value="Selection sort">Selection sort</option>
-        <option value="Insertion sort">Insertion sort</option>
-        <option value="Shell sort">Shell sort</option>
-    </optgroup>
-    <optgroup label="Divide and conqure">
-        <option value="Quick sort">Quick sort</option>
-        <option value="Merge sort">Merge sort</option>
-    </optgroup>
-    </select>`
-    
-    parent.appendChild(new_element)
-}
-let game_start = ()=>{
-    // document.querySelector(".big_heading").innerHTML = "Select Approach"   
-    document.querySelector(".small_heading").style.display = "none"
-    add_selection_option_button()
-    document.querySelector(".init_start_btn").style.display = "none"
-    new_btn = document.createElement("button")
-    new_btn.className = "init_start_btn"
-    new_btn.innerHTML = "Go"
-    new_btn.style.marginTop = "70vh"
-    new_btn.setAttribute("onclick","go()")
-    document.querySelector(".heading").appendChild(new_btn)
+// size of bar
+var size = 30
 
-}
-let clear_canvas = ()=>{
-    document.querySelector(".container").style.display = "none"
 
+// setting algorithm by selecting from button
+let set_algo = (ele)=>{
+    let curr_algos = ele.id
+    algo = curr_algos
+    game_start()
 }
-let set_algo_heading = ()=>{
-    document.querySelector(".algo_heading").innerHTML = algo
-    document.querySelector(".visualizer_container").style.display = "flex"
-    document.querySelector(".bar_container").style.display = "flex"
-    document.querySelector(".start_visualize").style.display = "flex"
-}
+// reset bars to clear the screen of bars
 let reset_bars = ()=>{
     let bar_list = document.querySelector(".bar_list")
     bar_list.innerHTML = ""   
 }
+// to draw bars of size n and return array
 let make_bars = (size)=>{
 
     let bar_list = document.querySelector(".bar_list")
@@ -61,18 +28,20 @@ let make_bars = (size)=>{
         let bar = document.createElement("li")
         bar.classList.add("bar")
         bar.id = `${i}`
-        let bar_size = parseInt(500/size)
-        bar.style.height = Math.max(10,500-Math.random() * (600 - 10) + 10,500-Math.floor(Math.random()*800))+"px"
+        let bar_size = parseInt(50/size)
+        bar.style.height = Math.max(10,450-Math.random() * (400 - 10) + 10,400-Math.floor(Math.random()*300))+"px"
         height_arr.push(bar.style.height)
-        bar.style.width = (500/size)+"px"
+        bar.style.width = (250/size)+"px"
         bar.style.listStyleType = "none"
-        bar.style.background = "lightblue"
+        bar.style.background="lightblue"
+       
         bar.style.transform = `translateX(${i * bar_size}px)`;
         bar_list.appendChild(bar)    
     }
     return height_arr
     
 }
+// draw bars animation to window
 let draw_bars = async (array)=>{
     for(let i=0;i<size;i++){
         let bar = document.getElementById(i)
@@ -80,19 +49,24 @@ let draw_bars = async (array)=>{
         bar.style.height = array[i]+"px"
     }
 }
-var size = 50
+// go to sort function
 let go = ()=>{
-    clear_canvas()
-        let body_ele = document.querySelector("body")
-        body_ele.setAttribute("style","background:url('/static/images/work_bg.png')")
-        body_ele.style.backgroundSize = "cover"
-        body_ele.style.backgroundRepeat = "repeat"
-
-    set_algo_heading()
     array = make_bars(size)
+}
+// game start function to remove non relevent stuff
+let game_start = ()=>{
+    document.querySelector(".comparision").style.display = "none"
+    document.querySelector(".dandc").style.display = "none"
+    document.querySelector(".heading").innerHTML = algo[0].toUpperCase() + algo.substring(1) + " Sort"
+    document.querySelector(".heading").style.marginBottom = "5px"
+    document.querySelector(".visualizer_cont").style.display="flex"
+    document.querySelector(".home_icon").style.display="flex"
+    console.log("Algorithm selected -> ",algo)
+    go()
 }
 
 
+// clean array by parsing it to int
 let clean_array = (array)=>{
     for(let i =0;i<array.length;i++){
         let element = array[i]
@@ -104,16 +78,20 @@ let clean_array = (array)=>{
     return array
 }
 
+// change color of bar by it's index and color
 let change_color = (index,color)=>{
     document.getElementById(`${index}`).style.background = color
 }
 
+
 var time = 250
-var speed_container = document.querySelector(".speedcontainer")
-var size_container = document.querySelector(".sizecontainer")
+var speed_container = document.querySelector("#speedslider")
+var size_container = document.querySelector("#sizeslider")
+// time setting from slider
 let set_time = (e)=>{
     time = 500-(e.target.value)*25
 }
+// size setting from slider
 let set_size = (e)=>{
     if(e.target.value<=25){
         size = 25
@@ -127,24 +105,29 @@ let set_size = (e)=>{
     array = make_bars(size)
 
 }
+// setting array color by array and colors
 let set_array_color = async(array,color)=>{
     for(let i=0;i<array.length;i++){
         time_sleep(time)
         change_color(i,color)
     }
 }
+// event listners
 speed_container.addEventListener("change",set_time)
 size_container.addEventListener("change",set_size)
 
+// time sleep function
 function time_sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
  
+// randomize bars function which triggers by button
 let randomize_bars = ()=>{
     reset_bars()
     array = make_bars(size)
 }
 
+// selection sort algorithm
 let selection_sort = async (array)=>{
     let min_element = 0
     let n = array.length
@@ -207,6 +190,7 @@ let selection_sort = async (array)=>{
     return array
     
 }
+// bubble sort algorithm
 let bubble_sort = async (array)=>{
     let n = array.length
     let default_color = "lightblue"
@@ -264,6 +248,7 @@ let bubble_sort = async (array)=>{
     return array
     
 }
+// insertion sort algorithm
 let insertion_sort = async (array)=>{
     let n = array.length
     let default_color = "lightblue"
@@ -329,6 +314,7 @@ let insertion_sort = async (array)=>{
 
         return array
 }
+// shell sort algorithm
 let shell_sort = async (array)=>{
     let n = array.length
     let default_color = "lightblue"
@@ -386,6 +372,7 @@ let shell_sort = async (array)=>{
 
         return array
 }
+// sub paritition function for quick sort
 let partition = async (array,low,high)=>{
     let pviot = array[high]
     i = low-1
@@ -450,7 +437,7 @@ let partition = async (array,low,high)=>{
 
     return i+1
 }
-
+// quick sort algorithm
 let quick_sort = async (array,low,high)=>{
     
     if(low<high){
@@ -461,7 +448,7 @@ let quick_sort = async (array,low,high)=>{
     }
 
 }
-
+// sub merge function for merge sort
 let merge = async (array,left,right)=>{
     let i=0
     let j=0
@@ -491,6 +478,7 @@ let merge = async (array,left,right)=>{
     return array
 
 }
+// merge sort algorithm
 let mergeSort = async (array)=>{
     
     if(array.length>1){
@@ -516,54 +504,59 @@ let mergeSort = async (array)=>{
     }
 
 }
-
+// disable slider
 let disabled_sliders = ()=>{
-    let speedslider = document.querySelector(".speedslider")
+    let speedslider = document.querySelector("#speedslider")
     speedslider.disabled = true
-    let sizeslider = document.querySelector(".sizeslider")
+    let sizeslider = document.querySelector("#sizeslider")
     sizeslider.disabled = true
 }
-
+// enabled slider
 let enabled_sliders = ()=>{
-    let speedslider = document.querySelector(".speedslider")
+    let speedslider = document.querySelector("#speedslider")
     speedslider.disabled = false
-    let sizeslider = document.querySelector(".sizeslider")
+    let sizeslider = document.querySelector("#sizeslider")
     sizeslider.disabled = false
 }
-
+// start visualize function which perform  some action then visualize algorithm by user input
 let start_visualize = ()=>{
     array = clean_array(array)
     disabled_sliders()
-    if(algo=="Selection sort"){
+    if(algo=="selection"){
         let new_array = selection_sort(array)
         console.log(new_array)
     }
-    if(algo=="Bubble sort"){
+    if(algo=="bubble"){
         console.log("this array is gone ",array)
         let new_array = bubble_sort(array)
         console.log(new_array)
     }
-    else if(algo=="Insertion sort"){
+    else if(algo=="insertion"){
         console.log("this array is gone ",array)
         let new_array = insertion_sort(array)
         console.log(new_array)
     }
-    else if(algo=="Shell sort"){
+    else if(algo=="shell"){
         console.log("this array is gone ",array)
         let new_array = shell_sort(array)
         console.log(new_array)
     }
-    else if(algo=="Quick sort"){
+    else if(algo=="quick"){
         console.log("this array is gone ",array)
         let new_array = quick_sort(array,0,array.length-1)
         console.log(new_array)
     }
-    else if(algo=="Merge sort"){
+    else if(algo=="merge"){
         console.log("this array is gone ",array)
         let new_array = mergeSort(array)
         console.log(new_array)
     }
     enabled_sliders()
 
+}
+
+
+function home_(){
+    location.reload()
 }
 
