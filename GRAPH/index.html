@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Algorithms</title>
+    <!-- <link rel="stylesheet" href="/static/other_css/sorting/index.css"> -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/000000/external-connection-project-work-icongeek26-flat-icongeek26.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/undefined/external-vertical-bars-customer-feedback-flaticons-lineal-color-flat-icons.png" type="image/x-icon"> -->
+</head>
+<body>
+    <div class="container">
+        <div class="home_icon"><img onclick="home_()" src="https://img.icons8.com/fluency-systems-regular/48/undefined/home.png"/></div>
+        <div class="heading">Graph Algorithms</div>
+        <div class="comparision">
+            <div onclick="open_proj(this)" id="dfs" class="buttons"><h1>D F S</h1></div>
+            <div onclick="open_proj(this)" id="bfs" class="buttons"><h1>B F S</h1></div>
+        </div>
+        
+        
+      
+
+    </div>
+</body>
+<script>
+    let bfs = document.getElementById("bfs")
+    let dfs = document.getElementById("dfs")
+
+
+       
+    bfs.style.backgroundImage = "url('/bfs_graphics.png')"
+    bfs.style.backgroundSize = "cover"
+    bfs.style.color = "transparent"
+
+    dfs.style.backgroundImage = "url('/dfs_graphics_2.png')"
+    dfs.style.backgroundSize = "cover"
+    dfs.style.color = "transparent"
+
+
+    function open_proj(ele){
+        if(ele.id==="dfs"){
+            window.open("/DFS/index.html","blank")
+        }
+        else if(ele.id==="bfs"){
+            window.open("/BFS/index.html","blank")
+        }
+    }
+
+</script>
+<!-- <script src="/static/other_js/sorting/index.js"></script> -->
+<!-- <script src=""></script> -->
+</html>

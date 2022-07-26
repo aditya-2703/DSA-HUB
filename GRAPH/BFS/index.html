@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/alert.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="icon" type="image/gif" sizes="128x128" href="./static/images/logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="inner_container">
+            <div class="info_container">
+                <div class="heading">Slider puzzle With <span>Graph</span> </div>
+                <div class="sm_heading">Explore graph data structure to solve problems and make fun games.</div>
+                
+                <div class="button" onclick="start_game()">Start</div>
+            </div>
+            <div class="display_container">
+                <div class='iphone'>
+                    <!-- <div class="phone_cont_1">
+                        <div class="heading_inn">Slider Puzzle</div>
+                        <div class="img_border"><img src="https://i.pinimg.com/originals/2f/d1/64/2fd164a646bf2165d76cecd27437f5f5.gif" alt="gif" class="gif_sec"></div>
+                        <img class="timer" src="https://s0.gifyu.com/images/5-minute-countdown.gif" alt="gif">
+                    </div>
+                    <div class="phone_cont_2">
+                        <div class="bar"></div>
+                        <div class="moves">Min moves : 21</div>
+                    </div> -->
+                    <img class="slider_img" src="slider_img.png" alt="image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="game_start_container">
+        <div class="extra_cont">
+            <div class="bg_heading">Slider Puzzle</div>
+            <div class="sm_info">0 Moves | 11 Tiles</div>
+            <div class="suffle_button button" onclick="suffle_board()"><img src="https://api.iconify.design/codicon/debug-restart.svg?color=white" alt="icon"> Suffle</div>
+            <div class="solve_button button"><img src="https://api.iconify.design/bx/question-mark.svg?color=white" alt="icon" onclick="open_code()"> code</div>
+            
+        </div>
+        <div class="grid_cont">
+            <div class="main_grid_cont">
+                <!-- <div id="1" class="grid_item">1</div>
+                <div id="2" class="grid_item">2</div>
+                <div id="3" class="grid_item">3</div>
+                <div id="4" class="grid_item">4</div>
+                <div id="5" class="grid_item">5</div>
+                <div id="6" class="grid_item">6</div>
+                <div id="7" class="grid_item">7</div>
+                <div id="8" class="grid_item">8</div>
+                <div id="9" class="grid_item">9</div>
+                <div id="10" class="grid_item">10</div>
+                <div id="11" class="grid_item">11</div>
+                <div id="12" class="grid_item">12</div>
+                <div id="13" class="grid_item">13</div>
+                <div id="14" class="grid_item">14</div>
+                <div id="15" class="grid_item">15</div>
+                <div id="0" class="grid_item empty"></div> -->
+            </div>
+        </div>
+        <div class="mode_cont">
+            <div class="inner_mode_cont">
+                <div class="difficulty_cont">
+                    <div class="diff_heading">Difficulty</div>
+                    <div class="diff_option_list">
+                        <div class="diff_op" id="easy" onclick="make_board_diff(this)">Easy</div>
+                        <div class="diff_op" id="medium" onclick="make_board_diff(this)">Medium</div>
+                        <div class="diff_op" id="hard" onclick="make_board_diff(this)">Hard</div>
+                    </div>
+                    
+                </div>
+                <div class="hint_cont difficulty_cont">
+                    <div class="diff_heading">Hint</div>
+                    <div class="diff_option_list" onclick="get_hint()">
+                        <div class="diff_op min_moves_element">Click Here For Get Hint : 💡</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- <script src="/static/js/index.js"></script> -->
+<script src="./prev.js"></script>
+<script type="module" src="/cute-alert-master/cute-alert.js"></script>
+
+</html>

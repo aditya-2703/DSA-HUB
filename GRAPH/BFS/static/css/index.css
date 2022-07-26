@@ -1,0 +1,2013 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+* body .container .inner_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+* body .container .inner_container .info_container {
+  position: relative;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* CSS */
+}
+* body .container .inner_container .info_container .heading, * body .container .inner_container .info_container .sm_heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 5em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+* body .container .inner_container .info_container .heading span, * body .container .inner_container .info_container .sm_heading span {
+  font-weight: 900;
+  color: #4a39ef;
+}
+* body .container .inner_container .info_container .sm_heading {
+  color: grey;
+  font-size: 1.4em;
+}
+* body .container .inner_container .info_container .button {
+  width: 30%;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: #4a39ef;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 2em;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+* body .container .inner_container .info_container .button:disabled {
+  cursor: default;
+}
+* body .container .inner_container .info_container .button:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+* body .container .inner_container .display_container {
+  position: relative;
+}
+* body .container .inner_container .display_container .iphone {
+  display: flex;
+  top: 200px;
+  color: #fff;
+  text-align: center;
+  font-family: "SF Pro Display", Helvetica Neue, Arial, sans-serif;
+  letter-spacing: -0.022em;
+  font-size: 2.5vmin;
+  text-shadow: 0 0 0.5em #000;
+  background-color: #000;
+  background-repeat: no-repeat, no-repeat;
+  border: solid #111;
+  position: relative;
+  box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+  transition: all 0.1s linear, line-height 0s linear;
+  background-position: 50% 100%, center;
+  transform-origin: bottom center;
+  text-shadow: 0 0 0em transparent;
+  background-position: 50% -100%, center center;
+  transition: all 0.15s linear, line-height 5s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+* body .container .inner_container .display_container .iphone .slider_img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+* body .container .inner_container .display_container .iphone {
+  width: 47.5247524752vmin;
+  height: 102.1782178218vmin;
+  line-height: 102.8910891089vmin;
+  border-width: 3.0415841584vmin;
+  border-radius: 8.1100260197vmin;
+  background: #fff;
+  z-index: 200;
+}
+* body .game_start_container {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+}
+* body .game_start_container .extra_cont {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* CSS */
+}
+* body .game_start_container .extra_cont .bg_heading {
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 5em;
+  font-weight: 300;
+  width: auto;
+  height: auto;
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+* body .game_start_container .extra_cont .sm_info {
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #4a39ef;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+* body .game_start_container .extra_cont .button {
+  margin-left: 50px;
+  width: 40%;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: #4a39ef;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 1.4em;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .game_start_container .extra_cont .button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+* body .game_start_container .extra_cont .button:disabled {
+  cursor: default;
+}
+* body .game_start_container .extra_cont .button:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+* body .game_start_container .grid_cont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .game_start_container .grid_cont .main_grid_cont {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, minmax(100px, 1fr));
+  grid-gap: 1rem;
+  place-items: center;
+}
+* body .game_start_container .grid_cont .main_grid_cont .grid_item {
+  background: #4a39ef;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .game_start_container .grid_cont .main_grid_cont .empty {
+  background: transparent;
+}
+* body .game_start_container .mode_cont {
+  position: relative;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+* body .game_start_container .mode_cont .inner_mode_cont {
+  position: relative;
+  width: 70%;
+  height: auto;
+  background: white;
+}
+* body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+* body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: #4a39ef;
+  padding: 5px;
+}
+* body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: whitesmoke;
+  position: relative;
+  border: 2px solid #4a39ef;
+  border-radius: 10px;
+  width: 100%;
+}
+* body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+* body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op:hover {
+  background: #4a39ef;
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 75%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  body .container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body .container .inner_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body .container .inner_container .info_container {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .container .inner_container .info_container .heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  body .container .inner_container .info_container .heading span {
+    font-weight: 900;
+    color: #4a39ef;
+  }
+  body .container .inner_container .info_container .button {
+    width: 30%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 2em;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .inner_container .info_container .button:disabled {
+    cursor: default;
+  }
+  body .container .inner_container .info_container .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .container .inner_container .display_container {
+    position: relative;
+  }
+  body .container .inner_container .display_container .iphone {
+    display: flex;
+    top: 200px;
+    color: #fff;
+    text-align: center;
+    font-family: "SF Pro Display", Helvetica Neue, Arial, sans-serif;
+    letter-spacing: -0.022em;
+    font-size: 2.5vmin;
+    text-shadow: 0 0 0.5em #000;
+    background-color: #000;
+    background-size: auto 200%, cover;
+    background-repeat: no-repeat, no-repeat;
+    border: solid #111;
+    margin-bottom: 2em;
+    position: relative;
+    box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+    transition: all 0.1s linear, line-height 0s linear;
+    background-position: 50% 100%, center;
+    transform-origin: bottom center;
+    text-shadow: 0 0 0em transparent;
+    background-position: 50% -100%, center center;
+    transition: all 0.15s linear, line-height 5s linear;
+    line-height: 0vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body .container .inner_container .display_container .iphone {
+    width: 47.5247524752vmin;
+    height: 102.1782178218vmin;
+    line-height: 102.8910891089vmin;
+    border-width: 3.0415841584vmin;
+    border-radius: 8.1100260197vmin;
+    background: #fff;
+    z-index: 200;
+  }
+  body .game_start_container {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+  }
+  body .game_start_container .extra_cont {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .game_start_container .extra_cont .bg_heading {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+    padding-left: 50px;
+    margin-bottom: 50px;
+  }
+  body .game_start_container .extra_cont .sm_info {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #4a39ef;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  body .game_start_container .extra_cont .button {
+    margin-left: 50px;
+    width: 40%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 1.4em;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .extra_cont .button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  body .game_start_container .extra_cont .button:disabled {
+    cursor: default;
+  }
+  body .game_start_container .extra_cont .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .game_start_container .grid_cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, minmax(100px, 1fr));
+    grid-gap: 1rem;
+    place-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .grid_item {
+    background: #4a39ef;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .empty {
+    background: transparent;
+  }
+  body .game_start_container .mode_cont {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont {
+    position: relative;
+    width: 70%;
+    height: auto;
+    background: white;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 100px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #4a39ef;
+    padding: 5px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: whitesmoke;
+    position: relative;
+    border: 2px solid #4a39ef;
+    border-radius: 10px;
+    width: 100%;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op {
+    position: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op:hover {
+    background: #4a39ef;
+    color: white;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    overflow: scroll;
+  }
+  body .game_start_container {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body .game_start_container .extra_cont {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .game_start_container .extra_cont .bg_heading {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+    padding-left: 50px;
+    margin-bottom: 50px;
+  }
+  body .game_start_container .extra_cont .sm_info {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #4a39ef;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  body .game_start_container .extra_cont .button {
+    margin-left: 50px;
+    width: 60%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 1.4em;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .extra_cont .button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  body .game_start_container .extra_cont .button:disabled {
+    cursor: default;
+  }
+  body .game_start_container .extra_cont .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .game_start_container .grid_cont {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, minmax(100px, 1fr));
+    grid-gap: 1rem;
+    place-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .grid_item {
+    background: #4a39ef;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .empty {
+    background: transparent;
+  }
+  body .game_start_container .mode_cont {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont {
+    position: relative;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 100px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #4a39ef;
+    padding: 5px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: whitesmoke;
+    position: relative;
+    border: 2px solid #4a39ef;
+    border-radius: 10px;
+    width: 100%;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op {
+    position: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op:hover {
+    background: #4a39ef;
+    color: white;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    overflow: scroll;
+    font-size: 65%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body .container .inner_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body .container .inner_container .info_container {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .container .inner_container .info_container .heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  body .container .inner_container .info_container .heading span {
+    font-weight: 900;
+    color: #4a39ef;
+  }
+  body .container .inner_container .info_container .button {
+    width: 30%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 2em;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .inner_container .info_container .button:disabled {
+    cursor: default;
+  }
+  body .container .inner_container .info_container .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .container .inner_container .display_container {
+    position: relative;
+  }
+  body .container .inner_container .display_container .iphone {
+    display: flex;
+    top: 200px;
+    color: #fff;
+    text-align: center;
+    font-family: "SF Pro Display", Helvetica Neue, Arial, sans-serif;
+    letter-spacing: -0.022em;
+    font-size: 2.5vmin;
+    text-shadow: 0 0 0.5em #000;
+    background-color: #000;
+    background-size: auto 200%, cover;
+    background-repeat: no-repeat, no-repeat;
+    border: solid #111;
+    margin-bottom: 2em;
+    position: relative;
+    box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+    transition: all 0.1s linear, line-height 0s linear;
+    background-position: 50% 100%, center;
+    transform-origin: bottom center;
+    text-shadow: 0 0 0em transparent;
+    background-position: 50% -100%, center center;
+    line-height: 0vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body .container .inner_container .display_container .iphone {
+    width: 47.5247524752vmin;
+    height: 102.1782178218vmin;
+    line-height: 102.8910891089vmin;
+    border-width: 3.0415841584vmin;
+    border-radius: 8.1100260197vmin;
+    background: #fff;
+    z-index: 200;
+  }
+  body .game_start_container {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body .game_start_container .extra_cont {
+    order: 0;
+    position: relative;
+    top: -10px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .game_start_container .extra_cont .bg_heading {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+  }
+  body .game_start_container .extra_cont .sm_info {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #4a39ef;
+    margin-left: 50px;
+  }
+  body .game_start_container .extra_cont .button {
+    width: 60%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 1.4em;
+    height: 44px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .extra_cont .button img {
+    width: 15px;
+    height: 15px;
+  }
+  body .game_start_container .extra_cont .button:disabled {
+    cursor: default;
+  }
+  body .game_start_container .extra_cont .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .game_start_container .grid_cont {
+    order: 2;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -150px;
+  }
+  body .game_start_container .grid_cont .main_grid_cont {
+    position: relative;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, minmax(100px, 1fr));
+    grid-gap: 1rem;
+    place-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .grid_item {
+    background: #4a39ef;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .empty {
+    background: transparent;
+  }
+  body .game_start_container .mode_cont {
+    order: 1;
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    top: -10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont {
+    order: 2;
+    position: relative;
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #4a39ef;
+    padding: 5px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: whitesmoke;
+    position: relative;
+    border: 2px solid #4a39ef;
+    border-radius: 10px;
+    width: 100%;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op {
+    position: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op:hover {
+    background: #4a39ef;
+    color: white;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: scroll;
+    font-size: 65%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body .container .inner_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body .container .inner_container .info_container {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .container .inner_container .info_container .heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  body .container .inner_container .info_container .heading span {
+    font-weight: 900;
+    color: #4a39ef;
+  }
+  body .container .inner_container .info_container .button {
+    width: 30%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 2em;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .inner_container .info_container .button:disabled {
+    cursor: default;
+  }
+  body .container .inner_container .info_container .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .container .inner_container .display_container {
+    position: relative;
+  }
+  body .container .inner_container .display_container .iphone {
+    display: flex;
+    top: 200px;
+    color: #fff;
+    text-align: center;
+    font-family: "SF Pro Display", Helvetica Neue, Arial, sans-serif;
+    letter-spacing: -0.022em;
+    font-size: 2.5vmin;
+    text-shadow: 0 0 0.5em #000;
+    background-color: #000;
+    background-size: auto 200%, cover;
+    background-repeat: no-repeat, no-repeat;
+    border: solid #111;
+    margin-bottom: 2em;
+    position: relative;
+    box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+    transition: all 0.1s linear, line-height 0s linear;
+    background-position: 50% 100%, center;
+    transform-origin: bottom center;
+    text-shadow: 0 0 0em transparent;
+    background-position: 50% -100%, center center;
+    line-height: 0vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body .container .inner_container .display_container .iphone {
+    width: 47.5247524752vmin;
+    height: 102.1782178218vmin;
+    line-height: 102.8910891089vmin;
+    border-width: 3.0415841584vmin;
+    border-radius: 8.1100260197vmin;
+    background: #fff;
+    z-index: 200;
+  }
+  body .game_start_container {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body .game_start_container .extra_cont {
+    order: 0;
+    position: relative;
+    margin-top: 10px;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .game_start_container .extra_cont .bg_heading {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+  }
+  body .game_start_container .extra_cont .sm_info {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #4a39ef;
+    margin-left: 50px;
+  }
+  body .game_start_container .extra_cont .button {
+    width: 60%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 1.4em;
+    height: 44px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .extra_cont .button img {
+    width: 15px;
+    height: 15px;
+  }
+  body .game_start_container .extra_cont .button:disabled {
+    cursor: default;
+  }
+  body .game_start_container .extra_cont .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .game_start_container .grid_cont {
+    order: 2;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -170px;
+  }
+  body .game_start_container .grid_cont .main_grid_cont {
+    position: relative;
+    width: 40%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(70px, 1fr));
+    grid-template-rows: repeat(4, minmax(70px, 1fr));
+    grid-gap: 0.6rem;
+    place-items: center;
+    place-content: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .grid_item {
+    background: #4a39ef;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .empty {
+    background: transparent;
+  }
+  body .game_start_container .mode_cont {
+    order: 1;
+    position: relative;
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    top: -10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont {
+    order: 2;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #4a39ef;
+    padding: 5px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: whitesmoke;
+    position: relative;
+    border: 2px solid #4a39ef;
+    border-radius: 10px;
+    width: 100%;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op {
+    position: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op:hover {
+    background: #4a39ef;
+    color: white;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 45%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body .container .inner_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .container .inner_container .info_container {
+    position: relative;
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .container .inner_container .info_container .heading {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  body .container .inner_container .info_container .heading span {
+    font-weight: 900;
+    color: #4a39ef;
+  }
+  body .container .inner_container .info_container .sm_heading {
+    width: 80%;
+    font-size: 2em;
+    text-align: center;
+  }
+  body .container .inner_container .info_container .button {
+    width: 50%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 2em;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .inner_container .info_container .button:disabled {
+    cursor: default;
+  }
+  body .container .inner_container .info_container .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .container .inner_container .display_container {
+    position: relative;
+    order: 0;
+  }
+  body .container .inner_container .display_container .iphone {
+    display: flex;
+    top: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: "SF Pro Display", Helvetica Neue, Arial, sans-serif;
+    letter-spacing: -0.022em;
+    font-size: 2.5vmin;
+    text-shadow: 0 0 0.5em #000;
+    background-color: #000;
+    background-size: auto 200%, cover;
+    background-repeat: no-repeat, no-repeat;
+    border: solid #111;
+    margin-bottom: 2em;
+    position: relative;
+    box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+    transition: all 0.1s linear, line-height 0s linear;
+    background-position: 50% 100%, center;
+    transform-origin: bottom center;
+    text-shadow: 0 0 0em transparent;
+    background-position: 50% -100%, center center;
+    transition: all 0.15s linear, line-height 5s linear;
+    line-height: 0vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body .container .inner_container .display_container .iphone {
+    width: 47.5247524752vmin;
+    height: 102.1782178218vmin;
+    line-height: 102.8910891089vmin;
+    border-width: 3.0415841584vmin;
+    border-radius: 8.1100260197vmin;
+    background: #fff;
+    z-index: 200;
+  }
+  body .game_start_container {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body .game_start_container .extra_cont {
+    order: 0;
+    position: relative;
+    top: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .game_start_container .extra_cont .bg_heading {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+  }
+  body .game_start_container .extra_cont .sm_info {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #4a39ef;
+    margin-left: 50px;
+  }
+  body .game_start_container .extra_cont .button {
+    width: 60%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 1.4em;
+    height: 44px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .extra_cont .button img {
+    width: 15px;
+    height: 15px;
+  }
+  body .game_start_container .extra_cont .button:disabled {
+    cursor: default;
+  }
+  body .game_start_container .extra_cont .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .game_start_container .grid_cont {
+    order: 1;
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+  }
+  body .game_start_container .grid_cont .main_grid_cont {
+    position: relative;
+    width: 70%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-rows: repeat(4, minmax(50px, 1fr));
+    grid-gap: 0.4rem;
+    place-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .grid_item {
+    background: #4a39ef;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .empty {
+    background: transparent;
+  }
+  body .game_start_container .mode_cont {
+    order: 2;
+    position: relative;
+    width: 100%;
+    top: -300px;
+    display: flex;
+    justify-content: center;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont {
+    order: 2;
+    position: relative;
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #4a39ef;
+    padding: 5px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: whitesmoke;
+    position: relative;
+    border: 2px solid #4a39ef;
+    border-radius: 10px;
+    width: 100%;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op {
+    position: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op:hover {
+    background: #4a39ef;
+    color: white;
+  }
+}
+@media only screen and (max-width: 300px) {
+  body {
+    font-size: 45%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body .container .inner_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .container .inner_container .info_container {
+    position: relative;
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* CSS */
+  }
+  body .container .inner_container .info_container .heading {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  body .container .inner_container .info_container .heading span {
+    font-weight: 900;
+    color: #4a39ef;
+  }
+  body .container .inner_container .info_container .sm_heading {
+    width: 80%;
+    font-size: 2em;
+    text-align: center;
+  }
+  body .container .inner_container .info_container .button {
+    width: 50%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 2em;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .inner_container .info_container .button:disabled {
+    cursor: default;
+  }
+  body .container .inner_container .info_container .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .container .inner_container .display_container {
+    position: relative;
+    order: 0;
+  }
+  body .container .inner_container .display_container .iphone {
+    display: flex;
+    top: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: "SF Pro Display", Helvetica Neue, Arial, sans-serif;
+    letter-spacing: -0.022em;
+    font-size: 2.5vmin;
+    text-shadow: 0 0 0.5em #000;
+    background-color: #000;
+    background-size: auto 200%, cover;
+    background-repeat: no-repeat, no-repeat;
+    border: solid #111;
+    margin-bottom: 2em;
+    position: relative;
+    box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+    transition: all 0.1s linear, line-height 0s linear;
+    background-position: 50% 100%, center;
+    transform-origin: bottom center;
+    text-shadow: 0 0 0em transparent;
+    background-position: 50% -100%, center center;
+    transition: all 0.15s linear, line-height 5s linear;
+    line-height: 0vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body .container .inner_container .display_container .iphone {
+    width: 47.5247524752vmin;
+    height: 102.1782178218vmin;
+    line-height: 102.8910891089vmin;
+    border-width: 3.0415841584vmin;
+    border-radius: 8.1100260197vmin;
+    background: #fff;
+    z-index: 200;
+  }
+  body .game_start_container {
+    display: none;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body .game_start_container .extra_cont {
+    order: 0;
+    position: relative;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 50px;
+    /* CSS */
+  }
+  body .game_start_container .extra_cont .bg_heading {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+  }
+  body .game_start_container .extra_cont .sm_info {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #4a39ef;
+    margin-left: 50px;
+  }
+  body .game_start_container .extra_cont .button {
+    width: 60%;
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #4a39ef;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 1.4em;
+    height: 44px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .extra_cont .button img {
+    width: 15px;
+    height: 15px;
+  }
+  body .game_start_container .extra_cont .button:disabled {
+    cursor: default;
+  }
+  body .game_start_container .extra_cont .button:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+  }
+  body .game_start_container .grid_cont {
+    order: 1;
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -260px;
+  }
+  body .game_start_container .grid_cont .main_grid_cont {
+    position: relative;
+    width: 70%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-rows: repeat(4, minmax(50px, 1fr));
+    grid-gap: 0.4rem;
+    place-items: center;
+    place-content: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .grid_item {
+    background: #4a39ef;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .game_start_container .grid_cont .main_grid_cont .empty {
+    background: transparent;
+  }
+  body .game_start_container .mode_cont {
+    order: 2;
+    position: relative;
+    width: 100%;
+    top: -500px;
+    display: flex;
+    justify-content: center;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont {
+    order: 2;
+    position: relative;
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #4a39ef;
+    padding: 5px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: whitesmoke;
+    position: relative;
+    border: 2px solid #4a39ef;
+    border-radius: 10px;
+    width: 100%;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op {
+    position: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  body .game_start_container .mode_cont .inner_mode_cont .difficulty_cont .diff_option_list .diff_op:hover {
+    background: #4a39ef;
+    color: white;
+  }
+}/*# sourceMappingURL=index.css.map */

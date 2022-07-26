@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D F S</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+</head>
+  <body>
+    <div class="game_start_container">
+      <div class="extra_cont">
+          <div class="bg_heading">Maze Puzzle</div>
+          <div class="sm_info">Help The god of thunder Thor to Kill Thanos. If you were stuck at the maze take help with this Solve button.</div>
+          <div class="suffle_button button" onclick="restart()"><img src="https://api.iconify.design/codicon/debug-restart.svg?color=white" alt="icon"> Restart</div>
+          <div class="solve_button button" onclick="solve_board()"><img src="https://api.iconify.design/bx/question-mark.svg?color=white" alt="icon" > Solve</div>
+          
+      </div>
+      <div class="grid_cont">
+          <div class="boundry">
+              <img class="thor" src="./thor.png" alt="">
+              <img class="thanos" id="thanos" src="./thanos.webp" alt="">
+              <img class="blast" id="blast" src="./blast.gif" alt="">
+
+              <div class="main_grid_cont"></div>
+          </div>
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+  <script src="./index.js"></script>
+</html>
