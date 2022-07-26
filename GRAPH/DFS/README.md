@@ -1,8 +1,9 @@
 # DFS - MAZE SOLVER
 
 <p align="center">
-  <img src="graph.png">
+  <img src="dfs.gif">
 </p>
+  
 
 
 This project is maze solving game in which we have to move the hammer from top left corner to bottom right corner . With the help of graph dfs algorithm the new functionality added where by clicking the solve button you are able to get the path from your current position to goal.
@@ -25,9 +26,5 @@ sh
 
 ```
 
-## What it looks like
 
-<p align="center">
-  <img src="dfs.gif">
-</p>
-  
+
