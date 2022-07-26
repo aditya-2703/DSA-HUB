@@ -1,7 +1,7 @@
 # BFS - SLIDING PUZZLE
 
 <p align="center">
-  <img src="graph.png">
+  <img src="bfs.gif">
 </p>
 
 
@@ -27,9 +27,4 @@ sh
 
 ```
 
-## What it looks like
-
-<p align="center">
-  <img src="bfs.gif">
-</p>
   
