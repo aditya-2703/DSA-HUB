@@ -113,6 +113,7 @@ The different sub-projects link is mentioned below
 * [Backtracking - Suduko Solver](https://github.com/aditya-2703/DSA-HUB/tree/main/BACKTRACKING)
 * [Greedy - File Encoder](https://github.com/aditya-2703/DSA-HUB/tree/main/GREEDY)
 * [Trie - Contact Diary](https://github.com/aditya-2703/DSA-HUB/tree/main/TRIE)
+* [Graph - Graph Algorithms](https://github.com/aditya-2703/DSA-HUB/tree/main/GRAPH)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
