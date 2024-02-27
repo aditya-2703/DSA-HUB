@@ -1,6 +1,6 @@
 # DSA-HUB
 
-## link -> [https://www.dsa-hub.ml/](https://www.dsa-hub.ml/)
+## link -> [https://grand-gelato-61b4b4.netlify.app/](https://grand-gelato-61b4b4.netlify.app/)
 
 <p align="center">
   <img src="bg.png">
