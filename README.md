@@ -1,7 +1,6 @@
 # DSA-HUB
 
-## link -> [https://poetic-gelato-dfaaf6.netlify.app/](https://poetic-gelato-dfaaf6.netlify.app/)
-
+## link -> [https://dsahub007.netlify.app/](https://dsahub007.netlify.app/)
 
 <p align="center">
   <img src="bg.png">
